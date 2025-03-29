@@ -18,6 +18,16 @@
 
 
     
+        
+    
+
+    
+        
+
+        
+            
+        
+    
 
 
 
@@ -39,21 +49,21 @@
         
 
         
-            <link>http://localhost:1313/</link>
+            <link>http://localhost:1313/insights/</link>
         
 
         
-            <atom:link href="http://localhost:1313/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="http://localhost:1313/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="http://localhost:1313/insights/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="http://localhost:1313/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         
@@ -61,7 +71,7 @@
         
 
         
-            <title>My New Hugo Site</title>
+            <title>Insights · My New Hugo Site</title>
         
 
         

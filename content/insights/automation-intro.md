@@ -2,7 +2,7 @@
 title: "Technical Writers in DevOps: How Documentation Shapes CI/CD Adoption"
 date: 2025-03-29
 series: ["CI/CD for docs"]
-tags: ["localization", "automation", "Hugo"]
+tags: ["devops", "automation", "github action"]
 summary: "The document discusses the role of technical writers in DevOps environments, focusing on creating persona-based documentation to improve user experience and lowering barriers for non-developers"
 ---
 # Technical Writers in DevOps: How Documentation Shapes CI/CD Adoption
@@ -72,8 +72,6 @@ You have three options to use vale.
 - Plugin for your text editor: Get real-time feedback while you write in a text editor such as VS Code or Vim.
 
 Like any other tool, regular maintenance ensures that Vale works as a helpful assistant rather than becoming a bottleneck or source of confusion.
-
-[Link to my tutorial video](https://makertube.net/w/ixd96GXJqsbxbAHCUGMRnw?start=0s)
 
 ## 3. Using GitHub Actions, GitLab CI/CD to integrate documentation updates
 
