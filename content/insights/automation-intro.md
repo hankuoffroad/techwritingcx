@@ -1,0 +1,107 @@
+---
+title: "Technical Writers in DevOps: How Documentation Shapes CI/CD Adoption"
+date: 2025-03-29
+series: ["CI/CD for docs"]
+tags: ["localization", "automation", "Hugo"]
+summary: "The document discusses the role of technical writers in DevOps environments, focusing on creating persona-based documentation to improve user experience and lowering barriers for non-developers"
+---
+# Technical Writers in DevOps: How Documentation Shapes CI/CD Adoption
+
+## 1. Introduction – The role of tech writers in DevOps-driven organizations and why it matters
+
+### Plan Persona-based Documentation
+
+While leading a documentation project for a new product launch, I noticed that internal teams (R&D, sales, and service) tended to assume that users shared their technical expertise. The anomaly led to overly technical or too generic content, ultimately confusing users rather than assisting them. To address this, I conducted an in-depth analysis of real-world user behavior, identified pain points, and reviewed support tickets to challenge these assumptions.
+
+Samsung's B2B solutions have diverse users, including installers, service partners, system administrators, and developers. Instead of a one-size-fits-all approach, I leveraged user research findings to spot recurring questions on support tickets and keep track of real-time insight into customer messages using the Sentiment Analysis model. That's where persona-based documentation comes into play:
+
+- Installers and Service Partners: Troubleshooting guides and setup manuals to reduce installation errors and support requests.
+- System Administrators: The Admin page includes release notes, deployment guides, and security policies to help enterprise customers manage and secure Samsung devices
+- Developers: The Developer page provides the latest release notes, SDK, and API references to support developers in integrating Samsung services using REST APIs and SDK.
+
+This structured documentation approach allowed customer and developer feedback to be effectively integrated into the documentation, improving long-term service strategies.
+
+### Lower barriers for non-developers
+
+Tech writers on your team might have diverse backgrounds other than software development. To make documentation more accessible, it's important to lower the technical barriers for those who are not familiar with development tools. Below are several ways I address this issue.
+
+- Wiki conversion to documentation page: Consider the wiki as a place to draft documents before converting them to documentation page and putting them under Git version control. A wiki provides a low barrier of entry and a low learning curve. You can convert wiki to other formats, such as Markdown and AsciiDoc using Pandoc.
+
+- Web interface: A text editor is like a toolbox for developers. You use it to write and edit code, just like picking the right tool for a task. Tech writers, especially from non-developer backgrounds, find text editors and CI/CD pipeline tricky. Once I understood how these tools help streamline the process, it became much easier to work with them. Until then, web editors in GitHub and GitLab are a good way to smooth the learning curve.
+
+- Have strategies for handling failed deployments: Keep in mind that CI/CD might be an unfamiliar concept for non-developers. When my pull request build fails, breaking down a problem into a step-by-step process helps me get my feedback assigned to the right team.
+
+  - What stage of pipelines failed: a build, test or deploy stage
+  - What events were pipelines run on: like when pushing to a branch, creating a merge request, or on a schedule
+  - What runner is configured in CI: Public, shared, group, or specific
+
+Stepping back, tech writers play a key role in helping DevOps engineers collaborate with non-technical stakeholders.
+
+## 2. Automating documentation in CI/CD workflows
+
+To scale technical documentation, you need workflows that encourage collaboration with developers while maintaining consistency and efficiency. Automating preview builds, validation checks, and testing creates a dev-friendly environment where your team produces repeatable results.
+
+### Generating a live preview of changes
+
+Each PR automatically builds and generates a preview, allowing you to see the final result without manually pulling the branch or building it locally. This eliminates the need to sift through diffs, which can be overwhelming in large PRs.
+
+### Automated Testing
+
+Every PR undergoes a series of tests. One checks external links to prevent broken URLs, while another enforces style guidelines by flagging specific words. The test results are attached to the PR for review. In static site generators like Antora, Hugo, and Jekyll, internal link validation is typically handled in the following ways:
+
+- Antora: Antora has built-in tools for checking internal links. It uses Asciidoc for content, and when generating documentation, it ensures that internal links are properly resolved. Antora uses xref validation (internal links) during site generation.
+
+- Hugo: Hugo has a link-checking feature through various plugins and built-in functionalities. You can integrate the broken-link-checker (a third-party tool) into the build process to check for broken internal and external links.
+
+### Implement Style Guide and Vale scripting
+
+Most software projects have documentation style guides that writers and reviewers are recommended to comply with to maintain consistency in documentation quality.  
+
+If you’re reviewing a style guide for the first time, it’s a good idea to start by looking at established examples like the Google Developer Style Guide and Red Hat Style Guide. These are excellent references because they are widely adopted and reflect best practices in the industry. From there, you can customize the style guide to fit the specific needs of your project or organization.
+
+But how can you ensure that writers and reviewers apply style guides across different working groups? This is where Documentation style linting (linting in short) comes into play.
+
+Vale is a command-line tool for checking your writing for grammar and stylistic errors against a set of style rules. It codifies your style guides into a collection of Vale-compatible YAML files that you can adapt to your team's workflow. Vale works on Mac OS, Linux, Windows, Docker, or Podman Container.
+
+You have three options to use vale.
+
+- Vale CLI (Command line interface): you run it locally when you need to use a text editor of your choice. It runs 100% offline. Your content is never sent to a remote server for processing.
+
+- With a CI/CD pipeline on a remote Git repository: I see Vale as the last line of defense rather than the first. Catch basic grammar and stylistic errors before a pull request rather than relying solely on CI/CD checks. Ideally, contributors should run Vale locally to catch and fix common mistakes early. Then, CI/CD can serve as a final validation step, ensuring consistency across the project. This proactive approach reduces unnecessary back-and-forth in PR reviews and keeps the documentation workflow smooth.
+
+- Plugin for your text editor: Get real-time feedback while you write in a text editor such as VS Code or Vim.
+
+Like any other tool, regular maintenance ensures that Vale works as a helpful assistant rather than becoming a bottleneck or source of confusion.
+
+[Link to my tutorial video](https://makertube.net/w/ixd96GXJqsbxbAHCUGMRnw?start=0s)
+
+## 3. Using GitHub Actions, GitLab CI/CD to integrate documentation updates
+
+GitHub Actions and GitLab CI/CD serve similar purposes—automating workflows for building, testing, and deploying code and documentation sites.
+
+The Rocky Linux documentation repository utilizes GitHub Actions to automate various workflows, enhancing efficiency and consistency in documentation management. The GitHub Actions setup in Rocky Linux is one of the most well-integrated workflows I’ve seen, which is why I highly recommend it. When I started with tech writing, the seamless connection with Mattermost made onboarding smoother. From the first draft to the final deployment, the process flows naturally, making it easy for contributors to stay engaged and aligned throughout.
+
+Mattermost is an open-source, self-hosted messaging platform integrated with CI/CD pipelines.
+
+Key insights from months of testing and hands-on experience with their setup include:
+
+- Automated Build and Deployment: The Build and Deploy (Fastly) workflow is configured to automatically build and deploy documentation updates, ensuring that the latest changes are promptly reflected on the live site.
+
+- Regular Testing: The Run Tests workflow performs regular checks on the documentation, helping to identify and address issues early in the development process. 
+
+- Monthly Releases: The Create monthly release workflow facilitates the generation of monthly documentation releases, ensuring that users have the most recent and stable versions of the documentation. 
+
+[GitHub Actions workflow runs of Rocky Linux](https://github.com/rocky-linux/documentation/actions)
+
+These workflows demonstrate Rocky Linux's commitment to maintaining up-to-date and reliable documentation through automation, benefiting contributors and users.
+
+## 4. Conclusion – Key takeaways and future directions for documentation in DevOps
+
+Effective documentation is more than just writing. It’s about building scalable, developer-friendly workflows that enhance collaboration and maintain quality. The Rocky Linux GitHub Actions setup with Mattermost is a prime example of how automation streamlines documentation workflows, reduces friction in PR reviews, and ensures documentation stays up-to-date with minimal manual intervention.
+
+Moving forward, the role of tech writers in DevOps will continue to evolve, focusing on:
+- Scaling documentation through automation, reducing back-and-forth in reviews.
+- Bridging the gap between developers and non-technical stakeholders, ensuring clarity.
+- Integrating CI/CD best practices to maintain consistency and enforce style guidelines.
+
+By embedding documentation into DevOps workflows, you empower teams to ship better content, faster. The goal isn’t just to document. It’s to enable collaboration, knowledge sharing, and continuous improvement.
