@@ -14,23 +14,178 @@ categories:
 draft: false
 ---
 
-# Why I Chose Hugo (Even Though I Didn't Want To)
+## Why I Chose Hugo (Even Though I Didn't Want To)
 
-왜 처음엔 관심 없었는지로 시작
+When I first started looking for a theme, I thought that just installing it would make a beautiful website. But it turned out to be just a skeleton site. After testing it for about five days, I realized that learning step by step, like building with Legos, is actually a good approach.
 
-첨에 theme을 찾을때, 설치만 하면 멋있는 웺사이트가 완성될줄 알았는데 skeleton site 였음.
+Problem-solving is such an important part of being a tech writer, and I'm really enjoying the process.
 
-웹 개발 (난 첨엔 뭘 개발하는지도 모르고 시작함) 초보자에게 젤 힘든건 website configuration인데, 환경 설치가 어려우면 안됨. App Center에서 설치 쉬웠음 (마소/애플 앱스토어만큼 직관적) --> 개발자들이 왜 배포판 선택을 신중하게 하는지 이해
+Connecting goals with current activities
 
-글이 많아질 때까지는 최소한의 카테고리로 간결하게 유지하고, 추후에 필요하다면 유연하게 확장
+- How can learning to build websites be applied to technical writing/translation processes?
 
-Hugo 셋업하면서 배운점: Real-world 문제가 뭔지, 
-내가 왜 어려운 길로 가는지. 왜 이런 과정을 직접 하는 걸까?
+- How can I differentiate myself as a freelancer by applying automation?
 
-결론: Hugo를 통해 코드로 웹 디자인을 컨트롤하는 이유를 직접 체감
-초보가 웹 개발을 하면서 겪는 과정, 시행착오, 문제 해결 방법
---> 단순히 "이렇게 하세요"가 아니라, "이 과정에서 어떤 시행착오를 겪었고, 어떻게 해결했는지"를 공유
+- If I increase my collaboration with AI, what kind of role can I take on in the industry?  
 
-한 가지씩 고쳐보는 웹 개발의 과정에서 얻을 수 있는 가치
+## Switching Hugo Themes: Challenges & Solutions
 
-실제 프로젝트 기반으로 학습 (Real-world 문제 해결): 개발자 마인드셋. 사실 "비개발자"라는 의식은 직업 타이틀이 아니라, 문제를 해결하는 방식과 접근법의 차이에서 오는것
+- Problem: Changing the Hugo theme turned out to be more challenging than expected
+
+- Solution: Tried a couple of themes and selected the Paige them
+
+- Helpful Resources: Hugo and Paige theme Official documentation
+
+- Result: Successfully applied the Paige theme and was satisfied with the outcome
+
+## Preparing the Test Environment and Uploading a Simple Test Page
+
+- Hugo Installation Environment: Ubuntu 24.04.2 LTS
+
+- Hugo Version: extended/stable 0.145.0
+
+- Hugo theme: Paige
+
+Keeping Ubuntu 24.04 LTS (supported until 2029) while maintaining the latest Hugo via Snap is the most stable choice. Stability means operating predictably over a long period.
+
+If you're working on Hugo-based web development and localization automation, the best approach is to stick with Ubuntu LTS and install the latest Hugo via Snap.
+
+Run hugo server --debug to check for deprecated warnings.
+(There might be changes to the structure of layouts, partials, and config.toml.)
+
+For beginners in web development (I didn't even know what I was developing at first), the hardest part is website configuration. If the environment setup is difficult, it becomes a barrier. Installing through App Center was easy (as intuitive as the Microsoft/Apple App Store) – this helped me understand why developers are careful when choosing a distribution.
+
+Development Environment: Git, Go, and Dart Sass
+
+hugo new site <sitename>: Site skeleton → literally, nothing is there.
+
+It's important to understand the directory structure before moving forward.
+
+The documentation varies greatly from theme to theme.
+
+The Paige theme is installed using Hugo's module system, not a Git submodule. This method is used starting from Hugo v0.60.0 and later.
+
+Be careful if the [params.paige] section is duplicated or declared incorrectly.
+
+## Content management
+
+Multi-format support: Regardless of content format, all content must have front matter, preferably including both title and date. Hugo selects the content renderer based on the markup identifier in front matter, falling back to the file extension.
+
+There are three ways to define menu entries: Automatically, In front matter, and In site configuration
+
+Define in front matter
+
+---
+title: "How I Started Developing My Hugo Site"
+date: 2025-03-29
+author: "Hanku"
+description: "A personal journey through building a Hugo site from scratch, with insights on customization, design, and technical challenges."
+tags:
+  - Hugo
+  - Web Development
+  - Personal Blog
+  - Website Development
+categories:
+  - Development Journey
+  - Personal Projects
+draft: false
+---
+
+## How to Use grep to Navigate Your Hugo Configuration
+
+grep is one of the most essential tools for developers. At first, you might wonder, "Why do I need this?" But once you get used to it, it becomes incredibly useful for searching files or modifying specific code/configurations.
+
+To find where a specific text is defined in hugo.toml:
+
+```sh
+grep "New Hank Hugo Site" hugo.toml
+```
+
+To search the entire project:
+
+```sh
+grep -r "New Hank Hugo Site" .
+```
+
+To search within the content/ directory:
+
+```sh
+grep -r "Yourpost" content/
+```
+
+To search inside the themes/paige/ directory:
+
+```sh
+grep -r "New Hank Hugo Site" themes/paige/
+```
+
+## Information Architecture and Design Strategy
+
+Structuring Content and Navigation
+
+- The website is divided into three main sections: Profile, Tech & Tools, and Notes, with content displayed in a tile-based layout.
+
+- Instead of using deep subsections, utilize tags and filters to organize content efficiently.
+
+- Keep the category structure minimal until there is enough content, and expand it flexibly when needed.
+
+- Avoid anti-patterns seen in websites with too many menu items and empty categories, which make navigation difficult.
+
+
+## Building a Scalable Hugo Site: Design, Git Workflow, and Clean Code Practices
+
+Commit Strategy
+
+- Commit by feature → Each small change should be committed separately.
+
+- Plan major changes in a modular way and complete them systematically.
+
+- Work locally first and only push to remote when the code is stable.
+
+Branching Strategy
+
+- main → Stable, production-ready code
+
+- dev → Development and experimental branch
+
+- feature/custom-header → A feature-specific branch for modifications
+
+Using .gitignore for Clean Project Management
+
+- Add public/, resources/, and .hugo_build.lock to .gitignore
+
+- A well-maintained .gitignore file:
+
+    -- Prevents unnecessary files from being committed
+
+    -- Keeps the project clean and manageable
+
+    -- Allows flexibility in deployment strategies
+
+    -- Makes it easier to manage accidentally committed files
+
+Modular Commit Strategy & Commit Message Guidelines
+
+- Follow a structured commit message format:
+
+```sh
+git commit -m "feat: add custom homepage layout"
+git commit -m "fix: resolve menu alignment issue"
+git commit -m "refactor: restructure partials for better readability"
+```
+
+## SCSS File Path Issues & Transpilation
+
+If you installed Hugo via Snap, it already includes Dart Sass, so it's best to remove any separately installed dart-sass to avoid conflicts.
+Detecting SCSS Build Failures
+
+To visually detect SCSS build failures, you can add the following fallback code:
+
+```sh
+<style>
+    /* Change background to red if SCSS fails to compile */
+    body { background: red !important; }
+</style>
+```
+
+

@@ -1,0 +1,20 @@
+# Ignore the Hugo public folder (generated files)
+public/
+
+# Ignore Hugo's temporary files and cache
+resources/
+data/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore .env files (if you're using environment variables)
+.env
