@@ -1,0 +1,210 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+
+        
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Sat, 29 Mar 2025 00:00:00 UTC</lastBuildDate>
+        
+
+        
+            <link>http://localhost:1313/insights/</link>
+        
+
+        
+            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="http://localhost:1313/insights/" hreflang="en-us" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>Insights · Portfolio Page by Hanku</title>
+        
+
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<h2 id=why-i-chose-hugo-even-though-i-didnt-want-to>Why I chose Hugo (even though I didn&rsquo;t want to)</h2><p>When building my portfolio website, I needed a solution that was fast, flexible, and easy to maintain. After exploring various options, I decided to go with Hugo, a powerful static site generator written in Go. Here’s why it stood out:</p><ul><li><p>Flexible Content Management: Hugo’s file-based structure makes content management straightforward. Instead of dealing with complex databases, I can organize my content using simple Markdown files. This fits perfectly with my workflow as a technical writer and localization expert, allowing me to focus on creating content rather than managing a backend system.</p></li><li><p>Multi-Format Content Support in Hugo: One key reason I chose Hugo is its ability to generate multiple output formats. Unlike traditional static site generators that focus solely on a format, Hugo supports:</p><p>&ndash; Markdown (.md) - The default format for content in Hugo. It’s widely used because of its simplicity and readability.</p><p>&ndash; reStructuredText (reST) (.rst) - An alternative markup language for content, commonly used in Python-related projects.</p><p>&ndash; AsciiDoc (.adoc or .asciidoc) - A lightweight markup language that’s often used in technical documentation.</p><p>&ndash; XML (.xml) - Although not as common for content creation, Hugo can handle XML files (such as RSS feeds or other structured data). This flexibility allows me to extend my website beyond a traditional blog—potentially generating custom feeds or integrating with other services.</p></li><li><p>Hugo includes Hugo Pipes, which allows for asset optimization without needing external tools. I can process CSS with Dart-Sass within Hugo’s ecosystem. This simplifies my workflow and reduces the need for additional build tools.</p></li><li><p>Version control and ease of deployment: Since Hugo is a static site generator, all content and configurations are stored in a Git repository. This makes it easy to version control my site, collaborate with others, and deploy changes seamlessly using services like GitHub Pages, Cloudflare Pages, or Netlify.</p></li></ul><h2 id=preparing-the-test-environment-and-uploading-a-test-page>Preparing the test environment and uploading a test page</h2><ul><li><p>System Environment: Ubuntu 24.04.2 LTS</p></li><li><p>Hugo Version: extended/stable 0.145.0</p></li><li><p>Hugo theme: Paige</p></li><li><p>Key Development Tools: Git, Visual Studio Code, and Dart Sass (CSS Preprocessor)</p></li></ul><p>Keeping Ubuntu 24.04 LTS (supported until 2029) while maintaining the latest Hugo via Snap is the most stable choice in the long run. Stability means operating predictably over a long period.</p><p>If you&rsquo;re working on Hugo-based web development and localization automation, the reliable approach is to stick with Ubuntu LTS and install the latest Hugo via Snap.</p><p>For beginners in web development, the hardest part is website configuration. If the environment setup in the beginning is difficult, it becomes a barrier. Installing Hugo through App Center of Ubuntu was effortless (as intuitive as the Microsoft/Apple App Store) – this helped me understand why developers are careful when choosing a distribution.</p><p>I&rsquo;ve installed The Paige theme using Hugo&rsquo;s module system, not a Git submodule. This method is used starting from Hugo v0.60.0 and later.</p><p>To preview a simple test page in dev environment, run the command in terminal;</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>$ hugo new site &lt;sitename&gt;</span></span></code></pre></div><p>This command creates a site skeleton, outlining its fundamental components without detailed content or styling.</p><h2 id=content-management>Content management</h2><p>Regardless of content format, all content must have front matter, preferably including both title and date. Hugo selects the content renderer based on the markup identifier in front matter, falling back to the file extension.</p><p>There are three ways to define menu entries: Automatically, In front matter, and In site configuration</p><p>In this blog, I’ve used front matter to define key metadata for each post. For example, I specify the title, date, and taxonomy at the beginning of my markdown files using YAML. This ensures that Hugo processes and displays the content correctly. Below is an example of how I define front matter in my blog posts:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#24292e>---</span><span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>title</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;How I Started Developing My Hugo Site&#34;</span><span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>date</span><span style=color:#1f2328>:</span><span style=color:#fff> </span>2025-03-29<span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>author</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;Hanku&#34;</span><span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>description</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;A personal journey through building a Hugo site from scratch, with insights on customization, design, and technical challenges.&#34;</span><span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>tags</span><span style=color:#1f2328>:</span><span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff>  </span>- Hugo<span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff>  </span>- Web Development<span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff>  </span>- Personal Blog<span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>categories</span><span style=color:#1f2328>:</span><span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff>  </span>- Development Journey<span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff>  </span>- Personal Projects<span style=color:#fff>
+</span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>draft</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#cf222e>false</span></span></span></code></pre></div><h2 id=grep-a-must-have-tool-for-developers>Grep: A must-have tool for developers</h2><p>Grep is a powerful and essential command-line tool that developers use to search through files. The name grep stands for Global Regular Expression Print,which means it&rsquo;s a tool that helps you search for patterns or specific strings within files using regular expressions. In Hugo, several key files are crucial for building and managing site. These files are responsible for different aspects of your website, such as configuration, content management, themes, and templates. Here&rsquo;s an example of hugo.toml file, serving as the central configuration hub for Hugo website.</p><p>If you&rsquo;ve been modifying parameters in the [params] section of the hugo.toml file, you might want to search for specific settings like custom parameters (for example, a custom logo or social media links).</p><p>To find where a specific text is defined in hugo.toml:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>grep -A <span style=color:#0550ae>5</span> <span style=color:#0a3069>&#34;[params]&#34;</span> hugo.toml</span></span></code></pre></div><p>This command searches for the [params] section in hugo.toml and shows the next 5 lines of context, which would likely include various parameters I’ve configured.</p><p>Sample Output:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#0550ae>[</span>params<span style=color:#0550ae>]</span>
+</span></span><span style=display:flex><span>  <span style=color:#953800>logo</span> <span style=color:#0550ae>=</span> <span style=color:#0a3069>&#34;images/logo.png&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#953800>socialLinks</span> <span style=color:#0550ae>=</span> <span style=color:#0550ae>[</span><span style=color:#0a3069>&#34;https://mastodon.social/yourusername&#34;</span>, <span style=color:#0a3069>&#34;https://github.com/yourusername&#34;</span><span style=color:#0550ae>]</span>
+</span></span><span style=display:flex><span>  <span style=color:#953800>customCSS</span> <span style=color:#0550ae>=</span> <span style=color:#0a3069>&#34;css/styles.css&#34;</span></span></span></code></pre></div><p>In this example:</p><ul><li><p>logo specifies the path to your site&rsquo;s logo image</p></li><li><p>socialLinks now contains Mastodon social media links</p></li><li><p>customCSS points to the CSS file for custom styling</p></li></ul><p>This would reflect the Mastodon URLs where I want to link to my profile. The grep command helps you quickly locate this configuration in the hugo.toml file and adjust it as needed.</p><h2 id=information-architecture>Information architecture</h2><p>When designing the website’s structure, the focus is on clarity, usability, and scalability. The goal is to create an intuitive navigation system that allows visitors to easily access relevant content while keeping the organization flexible for future expansion.</p><ul><li><p>Three Core Sections: The website is divided into three main sections: Profile, Insights, and Projects.</p><p>&ndash; Profile: Introduces who I am, my ongoing projects, and key highlights of my contributions to open-source initiatives</p><p>&ndash; Insights: Focuses on reflections rather than straightforward how-to guides, covering topics such as lessons learned from projects, event participation experiences, reviews of developer tools, automation insights, and IT certification preparation</p><p>&ndash; Projects: Showcases my involvement in open-source projects, including key milestones, event participation plans, long-term vision, and integration with GitLab/GitHub APIs</p></li><li><p>Tag-Based Organization: When designing my website, I intentionally avoided using nested sections and a typical tile layout, which are often seen in free blog platforms. In my opinion, these approaches can make the design feel cluttered and overwhelming. While this may be a matter of personal taste, I believe it&rsquo;s important to have full control over how the site looks and functions—the way I want it. I prefer a more minimalist and straightforward design that gives a clear, clean structure, and allows me to present content in a way that feels organized and intentional. By avoiding overly complex layouts, I maintain the flexibility to adjust and optimize the site exactly how I envision it, without being limited by pre-defined templates.</p></li><li><p>Minimalist Category Structure for Scalability: Categories are kept intentionally minimal at the start to avoid unnecessary complexity. As more content is added over time, the structure can be expanded naturally to accommodate growth.</p></li></ul><h2 id=building-a-scalable-hugo-site-using-git-workflow>Building a scalable Hugo site using Git Workflow</h2><p>When developing a Hugo site, establishing a solid workflow is essential for scalability, maintainability, and efficiency. Whether you&rsquo;re working solo or as part of a team, having a clean, modular, and consistent approach to managing your codebase will save time and reduce errors in the long run. This guide outlines key strategies for Git commits, branching, and project management practices to help you build a scalable Hugo site while keeping your development process streamlined and your codebase clean.</p><ul><li><p>Modular Commit and Commit Message Guidelines: A well-organized commit strategy is crucial for maintaining a clean history of your project and enabling efficient collaboration. Here&rsquo;s how you can manage your commits effectively:</p><p>&ndash; Commit by feature: Each small change should be committed separately. This ensures that each feature or fix is self-contained and easy to track, making it simple to revert or modify specific changes in the future.</p><p>&ndash; Plan major changes modularly: For larger features or refactorings, break them into smaller, manageable tasks. Complete these tasks systematically, which will make it easier to debug and test each part before moving on to the next.</p><p>&ndash; Work locally first: Always develop locally and test your changes before pushing to remote repositories. Only push your code to the remote repository when you are confident it is stable. This minimizes the risk of introducing bugs.</p><p>&ndash; Write clear and concise commit messages: Each commit message should explain what was done and why it was necessary. Avoid vague messages like &ldquo;fixed stuff&rdquo;; instead, use precise language, such as &ldquo;Fixed header alignment on mobile devices.&rdquo; Here are some examples of well-written commit messages:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>git commit -m <span style=color:#0a3069>&#34;feat: add custom homepage layout&#34;</span>
+</span></span><span style=display:flex><span>git commit -m <span style=color:#0a3069>&#34;fix: resolve menu alignment issue&#34;</span>
+</span></span><span style=display:flex><span>git commit -m <span style=color:#0a3069>&#34;refactor: restructure partials for better readability&#34;</span></span></span></code></pre></div></li><li><p>Branching Strategy: A well-structured branching strategy is essential for maintaining an organized codebase, enabling efficient development and deployment.</p><p>&ndash; main: This branch should always contain stable, production-ready code.</p><p>&ndash; dev: This branch is dedicated to ongoing development work and experiments. You can merge features or fixes into dev before they are considered stable enough to move to main.</p><p>&ndash; feature/custom-header: For specific changes like adding a custom header or new functionality, create feature branches. This keeps the codebase clean and allows you to work on individual features without disrupting the main development flow.</p></li><li><p>Using .gitignore for Clean Project Management: One of the simplest yet most effective ways to manage a project is through proper use of .gitignore. This file ensures that unnecessary or generated files are not committed to your repository, helping maintain a lean and efficient workflow.</p></li></ul><p>Add public/, resources/, and .hugo_build.lock to .gitignore: These are typically generated files that don’t need to be tracked in version control. By ignoring these files, you avoid cluttering your repository with files that can be easily regenerated.</p><h2 id=another-reason-why-documentation-is-important>Another reason why documentation is important</h2><p>Reflecting on the process, I’ve come to realize just how crucial documentation is in development. It’s not just about writing code but ensuring that everything is clear, understandable, and easy to maintain. This understanding has made me appreciate the importance of documenting every step in the development journey. Additionally, collaborating with the theme author has made this journey even more rewarding. The challenges have been enjoyable, and it has truly been a learning experience as we work together to improve and refine the theme. This collaboration has made the entire process not only productive but also deeply fulfilling.</p><h2 id=reflecting-on-the-journey-with-hugo>Reflecting on the journey with Hugo</h2><p>As I look back on my journey with Hugo, it&rsquo;s clear that building a site isn&rsquo;t just about the final product—it&rsquo;s about the entire process and the ecosystem that supports it. From designing the architecture of my site to diving deep into the code and customizing themes, each step has been a learning experience. What truly made this journey fulfilling was the support and collaboration from the wider Hugo community.</p><p>The open-source ecosystem around Hugo has provided a wealth of resources, from theme authors to contributors, who generously share their knowledge and expertise. Through this collaboration, I’ve been able to overcome challenges, implement new features, and continuously improve the site. The community’s contributions have made the development process not only easier but also more enjoyable.</p><p>In the end, it&rsquo;s not just the technical skills I gained but the sense of belonging to a larger, thriving ecosystem that makes the journey worthwhile. The support I received has reinforced my belief in the power of community-driven development. As I continue to work with Hugo, I’m excited for what’s to come and deeply grateful for the support that has made this all possible.</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-03-29:/insights/how-i-started-hugo/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/insights/how-i-started-hugo/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sat, 29 Mar 2025 00:00:00 UTC</pubDate>
+                    
+
+                    
+                        <title>How I Started Developing My Hugo Site</title>
+                    
+                </item>
+            
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<h1 id=technical-writers-in-devops-how-documentation-shapes-cicd-adoption>Technical Writers in DevOps: How Documentation Shapes CI/CD Adoption</h1><h2 id=1-introduction--the-role-of-tech-writers-in-devops-driven-organizations-and-why-it-matters>1. Introduction – The role of tech writers in DevOps-driven organizations and why it matters</h2><h3 id=plan-persona-based-documentation>Plan Persona-based Documentation</h3><p>While leading a documentation project for a new product launch, I noticed that internal teams (R&amp;D, sales, and service) tended to assume that users shared their technical expertise. The anomaly led to overly technical or too generic content, ultimately confusing users rather than assisting them. To address this, I conducted an in-depth analysis of real-world user behavior, identified pain points, and reviewed support tickets to challenge these assumptions.</p><p>Samsung&rsquo;s B2B solutions have diverse users, including installers, service partners, system administrators, and developers. Instead of a one-size-fits-all approach, I leveraged user research findings to spot recurring questions on support tickets and keep track of real-time insight into customer messages using the Sentiment Analysis model. That&rsquo;s where persona-based documentation comes into play:</p><ul><li>Installers and Service Partners: Troubleshooting guides and setup manuals to reduce installation errors and support requests.</li><li>System Administrators: The Admin page includes release notes, deployment guides, and security policies to help enterprise customers manage and secure Samsung devices</li><li>Developers: The Developer page provides the latest release notes, SDK, and API references to support developers in integrating Samsung services using REST APIs and SDK.</li></ul><p>This structured documentation approach allowed customer and developer feedback to be effectively integrated into the documentation, improving long-term service strategies.</p><h3 id=lower-barriers-for-non-developers>Lower barriers for non-developers</h3><p>Tech writers on your team might have diverse backgrounds other than software development. To make documentation more accessible, it&rsquo;s important to lower the technical barriers for those who are not familiar with development tools. Below are several ways I address this issue.</p><ul><li><p>Wiki conversion to documentation page: Consider the wiki as a place to draft documents before converting them to documentation page and putting them under Git version control. A wiki provides a low barrier of entry and a low learning curve. You can convert wiki to other formats, such as Markdown and AsciiDoc using Pandoc.</p></li><li><p>Web interface: A text editor is like a toolbox for developers. You use it to write and edit code, just like picking the right tool for a task. Tech writers, especially from non-developer backgrounds, find text editors and CI/CD pipeline tricky. Once I understood how these tools help streamline the process, it became much easier to work with them. Until then, web editors in GitHub and GitLab are a good way to smooth the learning curve.</p></li><li><p>Have strategies for handling failed deployments: Keep in mind that CI/CD might be an unfamiliar concept for non-developers. When my pull request build fails, breaking down a problem into a step-by-step process helps me get my feedback assigned to the right team.</p><ul><li>What stage of pipelines failed: a build, test or deploy stage</li><li>What events were pipelines run on: like when pushing to a branch, creating a merge request, or on a schedule</li><li>What runner is configured in CI: Public, shared, group, or specific</li></ul></li></ul><p>Stepping back, tech writers play a key role in helping DevOps engineers collaborate with non-technical stakeholders.</p><h2 id=2-automating-documentation-in-cicd-workflows>2. Automating documentation in CI/CD workflows</h2><p>To scale technical documentation, you need workflows that encourage collaboration with developers while maintaining consistency and efficiency. Automating preview builds, validation checks, and testing creates a dev-friendly environment where your team produces repeatable results.</p><h3 id=generating-a-live-preview-of-changes>Generating a live preview of changes</h3><p>Each PR automatically builds and generates a preview, allowing you to see the final result without manually pulling the branch or building it locally. This eliminates the need to sift through diffs, which can be overwhelming in large PRs.</p><h3 id=automated-testing>Automated Testing</h3><p>Every PR undergoes a series of tests. One checks external links to prevent broken URLs, while another enforces style guidelines by flagging specific words. The test results are attached to the PR for review. In static site generators like Antora, Hugo, and Jekyll, internal link validation is typically handled in the following ways:</p><ul><li><p>Antora: Antora has built-in tools for checking internal links. It uses Asciidoc for content, and when generating documentation, it ensures that internal links are properly resolved. Antora uses xref validation (internal links) during site generation.</p></li><li><p>Hugo: Hugo has a link-checking feature through various plugins and built-in functionalities. You can integrate the broken-link-checker (a third-party tool) into the build process to check for broken internal and external links.</p></li></ul><h3 id=implement-style-guide-and-vale-scripting>Implement Style Guide and Vale scripting</h3><p>Most software projects have documentation style guides that writers and reviewers are recommended to comply with to maintain consistency in documentation quality.</p><p>If you’re reviewing a style guide for the first time, it’s a good idea to start by looking at established examples like the Google Developer Style Guide and Red Hat Style Guide. These are excellent references because they are widely adopted and reflect best practices in the industry. From there, you can customize the style guide to fit the specific needs of your project or organization.</p><p>But how can you ensure that writers and reviewers apply style guides across different working groups? This is where Documentation style linting (linting in short) comes into play.</p><p>Vale is a command-line tool for checking your writing for grammar and stylistic errors against a set of style rules. It codifies your style guides into a collection of Vale-compatible YAML files that you can adapt to your team&rsquo;s workflow. Vale works on Mac OS, Linux, Windows, Docker, or Podman Container.</p><p>You have three options to use vale.</p><ul><li><p>Vale CLI (Command line interface): you run it locally when you need to use a text editor of your choice. It runs 100% offline. Your content is never sent to a remote server for processing.</p></li><li><p>With a CI/CD pipeline on a remote Git repository: I see Vale as the last line of defense rather than the first. Catch basic grammar and stylistic errors before a pull request rather than relying solely on CI/CD checks. Ideally, contributors should run Vale locally to catch and fix common mistakes early. Then, CI/CD can serve as a final validation step, ensuring consistency across the project. This proactive approach reduces unnecessary back-and-forth in PR reviews and keeps the documentation workflow smooth.</p></li><li><p>Plugin for your text editor: Get real-time feedback while you write in a text editor such as VS Code or Vim.</p></li></ul><p>Like any other tool, regular maintenance ensures that Vale works as a helpful assistant rather than becoming a bottleneck or source of confusion.</p><h2 id=3-using-github-actions-gitlab-cicd-to-integrate-documentation-updates>3. Using GitHub Actions, GitLab CI/CD to integrate documentation updates</h2><p>GitHub Actions and GitLab CI/CD serve similar purposes—automating workflows for building, testing, and deploying code and documentation sites.</p><p>The Rocky Linux documentation repository utilizes GitHub Actions to automate various workflows, enhancing efficiency and consistency in documentation management. The GitHub Actions setup in Rocky Linux is one of the most well-integrated workflows I’ve seen, which is why I highly recommend it. When I started with tech writing, the seamless connection with Mattermost made onboarding smoother. From the first draft to the final deployment, the process flows naturally, making it easy for contributors to stay engaged and aligned throughout.</p><p>Mattermost is an open-source, self-hosted messaging platform integrated with CI/CD pipelines.</p><p>Key insights from months of testing and hands-on experience with their setup include:</p><ul><li><p>Automated Build and Deployment: The Build and Deploy (Fastly) workflow is configured to automatically build and deploy documentation updates, ensuring that the latest changes are promptly reflected on the live site.</p></li><li><p>Regular Testing: The Run Tests workflow performs regular checks on the documentation, helping to identify and address issues early in the development process.</p></li><li><p>Monthly Releases: The Create monthly release workflow facilitates the generation of monthly documentation releases, ensuring that users have the most recent and stable versions of the documentation.</p></li></ul><p><a href=https://github.com/rocky-linux/documentation/actions rel=external>GitHub Actions workflow runs of Rocky Linux</a></p><p>These workflows demonstrate Rocky Linux&rsquo;s commitment to maintaining up-to-date and reliable documentation through automation, benefiting contributors and users.</p><h2 id=4-conclusion--key-takeaways-and-future-directions-for-documentation-in-devops>4. Conclusion – Key takeaways and future directions for documentation in DevOps</h2><p>Effective documentation is more than just writing. It’s about building scalable, developer-friendly workflows that enhance collaboration and maintain quality. The Rocky Linux GitHub Actions setup with Mattermost is a prime example of how automation streamlines documentation workflows, reduces friction in PR reviews, and ensures documentation stays up-to-date with minimal manual intervention.</p><p>Moving forward, the role of tech writers in DevOps will continue to evolve, focusing on:</p><ul><li>Scaling documentation through automation, reducing back-and-forth in reviews.</li><li>Bridging the gap between developers and non-technical stakeholders, ensuring clarity.</li><li>Integrating CI/CD best practices to maintain consistency and enforce style guidelines.</li></ul><p>By embedding documentation into DevOps workflows, you empower teams to ship better content, faster. The goal isn’t just to document. It’s to enable collaboration, knowledge sharing, and continuous improvement.</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-03-29:/insights/automation-intro/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/insights/automation-intro/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/insights/automation-intro/" hreflang="en-us" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sat, 29 Mar 2025 00:00:00 UTC</pubDate>
+                    
+
+                    
+                        <title>Technical Writers in DevOps: How Documentation Shapes CI/CD Adoption</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>

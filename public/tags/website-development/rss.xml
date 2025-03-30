@@ -1,0 +1,156 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+
+        
+            
+        
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+
+        
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Sat, 29 Mar 2025 00:00:00 UTC</lastBuildDate>
+        
+
+        
+            <link>http://localhost:1313/tags/website-development/</link>
+        
+
+        
+            <atom:link href="http://localhost:1313/tags/website-development/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="http://localhost:1313/tags/website-development/" hreflang="en-us" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="http://localhost:1313/tags/website-development/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>Website Development · Tags · My New Hugo Site</title>
+        
+
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                        <description><![CDATA[<h2 id=why-i-chose-hugo-even-though-i-didnt-want-to>Why I Chose Hugo (Even Though I Didn&rsquo;t Want To)</h2><p>When I first started looking for a theme, I thought that just installing it would make a beautiful website. But it turned out to be just a skeleton site. After testing it for about five days, I realized that learning step by step, like building with Legos, is actually a good approach.</p><p>Problem-solving is such an important part of being a tech writer, and I&rsquo;m really enjoying the process.</p><p>Connecting goals with current activities</p><ul><li><p>How can learning to build websites be applied to technical writing/translation processes?</p></li><li><p>How can I differentiate myself as a freelancer by applying automation?</p></li><li><p>If I increase my collaboration with AI, what kind of role can I take on in the industry?</p></li></ul><h2 id=switching-hugo-themes-challenges--solutions>Switching Hugo Themes: Challenges & Solutions</h2><ul><li><p>Problem: Changing the Hugo theme turned out to be more challenging than expected</p></li><li><p>Solution: Tried a couple of themes and selected the Paige them</p></li><li><p>Helpful Resources: Hugo and Paige theme Official documentation</p></li><li><p>Result: Successfully applied the Paige theme and was satisfied with the outcome</p></li></ul><h2 id=preparing-the-test-environment-and-uploading-a-simple-test-page>Preparing the Test Environment and Uploading a Simple Test Page</h2><ul><li><p>Hugo Installation Environment: Ubuntu 24.04.2 LTS</p></li><li><p>Hugo Version: extended/stable 0.145.0</p></li><li><p>Hugo theme: Paige</p></li><li><p>Development Environment: Git, Go, and Dart Sass</p></li></ul><p>Keeping Ubuntu 24.04 LTS (supported until 2029) while maintaining the latest Hugo via Snap is the most stable choice. Stability means operating predictably over a long period.</p><p>If you&rsquo;re working on Hugo-based web development and localization automation, the best approach is to stick with Ubuntu LTS and install the latest Hugo via Snap.</p><p>Run hugo server &ndash;debug to check for deprecated warnings.
+(There might be changes to the structure of layouts, partials, and config.toml.)</p><p>For beginners in web development (I didn&rsquo;t even know what I was developing at first), the hardest part is website configuration. If the environment setup is difficult, it becomes a barrier. Installing through App Center in Ubuntu was easy (as intuitive as the Microsoft/Apple App Store) – this helped me understand why developers are careful when choosing a distribution.</p><p>hugo new site : Site skeleton → literally, nothing is there.</p><p>It&rsquo;s important to understand the directory structure before moving forward.</p><p>The documentation varies greatly from theme to theme.</p><p>The Paige theme is installed using Hugo&rsquo;s module system, not a Git submodule. This method is used starting from Hugo v0.60.0 and later.</p><p>Be careful if the [params.paige] section is duplicated or declared incorrectly.</p><h2 id=content-management>Content management</h2><p>Multi-format support: Regardless of content format, all content must have front matter, preferably including both title and date. Hugo selects the content renderer based on the markup identifier in front matter, falling back to the file extension.</p><p>There are three ways to define menu entries: Automatically, In front matter, and In site configuration</p><p>Define in front matter</p><hr><p>title: &ldquo;How I Started Developing My Hugo Site&rdquo;
+date: 2025-03-29
+author: &ldquo;Hanku&rdquo;
+description: &ldquo;A personal journey through building a Hugo site from scratch, with insights on customization, design, and technical challenges.&rdquo;
+tags:</p><ul><li>Hugo</li><li>Web Development</li><li>Personal Blog</li><li>Website Development
+categories:</li><li>Development Journey</li><li>Personal Projects
+draft: false</li></ul><hr><h2 id=how-to-use-grep-to-navigate-your-hugo-configuration>How to Use grep to Navigate Your Hugo Configuration</h2><p>grep is one of the most essential tools for developers. At first, you might wonder, &ldquo;Why do I need this?&rdquo; But once you get used to it, it becomes incredibly useful for searching files or modifying specific code/configurations.</p><p>To find where a specific text is defined in hugo.toml:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Bash data-lang=Bash><span style=display:flex><span>grep <span style=color:#0a3069>&#34;New Hank Hugo Site&#34;</span> hugo.toml</span></span></code></pre></div><p>To search the entire project:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>grep -r <span style=color:#0a3069>&#34;New Hank Hugo Site&#34;</span> .</span></span></code></pre></div><p>To search within the content/ directory:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>grep -r <span style=color:#0a3069>&#34;Yourpost&#34;</span> content/</span></span></code></pre></div><p>To search inside the themes/paige/ directory:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>grep -r <span style=color:#0a3069>&#34;New Hank Hugo Site&#34;</span> themes/paige/</span></span></code></pre></div><h2 id=information-architecture-and-design-strategy>Information Architecture and Design Strategy</h2><p>Structuring Content and Navigation</p><ul><li><p>The website is divided into three main sections: Profile, Tech & Tools, and Notes, with content displayed in a tile-based layout.</p></li><li><p>Instead of using deep subsections, utilize tags and filters to organize content efficiently.</p></li><li><p>Keep the category structure minimal until there is enough content, and expand it flexibly when needed.</p></li><li><p>Avoid anti-patterns seen in websites with too many menu items and empty categories, which make navigation difficult.</p></li></ul><h2 id=building-a-scalable-hugo-site-design-git-workflow-and-clean-code-practices>Building a Scalable Hugo Site: Design, Git Workflow, and Clean Code Practices</h2><p>Commit Strategy</p><ul><li><p>Commit by feature → Each small change should be committed separately.</p></li><li><p>Plan major changes in a modular way and complete them systematically.</p></li><li><p>Work locally first and only push to remote when the code is stable.</p></li></ul><p>Branching Strategy</p><ul><li><p>main → Stable, production-ready code</p></li><li><p>dev → Development and experimental branch</p></li><li><p>feature/custom-header → A feature-specific branch for modifications</p></li></ul><p>Using .gitignore for Clean Project Management</p><ul><li><p>Add public/, resources/, and .hugo_build.lock to .gitignore</p></li><li><p>A well-maintained .gitignore file:</p><p>&ndash; Prevents unnecessary files from being committed</p><p>&ndash; Keeps the project clean and manageable</p><p>&ndash; Allows flexibility in deployment strategies</p><p>&ndash; Makes it easier to manage accidentally committed files</p></li></ul><p>Modular Commit Strategy & Commit Message Guidelines</p><ul><li>Follow a structured commit message format:</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>git commit -m <span style=color:#0a3069>&#34;feat: add custom homepage layout&#34;</span>
+</span></span><span style=display:flex><span>git commit -m <span style=color:#0a3069>&#34;fix: resolve menu alignment issue&#34;</span>
+</span></span><span style=display:flex><span>git commit -m <span style=color:#0a3069>&#34;refactor: restructure partials for better readability&#34;</span></span></span></code></pre></div><h2 id=scss-file-path-issues--transpilation>SCSS File Path Issues & Transpilation</h2><p>If you installed Hugo via Snap, it already includes Dart Sass, so it&rsquo;s best to remove any separately installed dart-sass to avoid conflicts.
+Detecting SCSS Build Failures</p><p>To visually detect SCSS build failures, you can add the following fallback code:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>&lt;style&gt;
+</span></span><span style=display:flex><span>    /* Change background to red <span style=color:#cf222e>if</span> SCSS fails to compile */
+</span></span><span style=display:flex><span>    body <span style=color:#0550ae>{</span> background: red !important<span style=color:#1f2328>;</span> <span style=color:#0550ae>}</span>
+</span></span><span style=display:flex><span>&lt;/style&gt;</span></span></code></pre></div><h2 id=hugo-syntax-highlighting-make-your-code-stand-out>Hugo Syntax Highlighting: Make Your Code Stand Out!</h2><p><a href=https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode rel=external>https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode</a></p><h2 id=another-reason-why-documentation-is-important>Another reason why documentation is important</h2><p>The design is clean, but some themes lack proper documentation, making customization frustrating. I spent the whole day reading the official Hugo documentation, and it really helped me understand the website structure (front-end).</p>]]></description>
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-03-29:/insights/how-i-started-hugo/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/insights/how-i-started-hugo/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Sat, 29 Mar 2025 00:00:00 UTC</pubDate>
+                    
+
+                    
+                        <title>How I Started Developing My Hugo Site</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>
