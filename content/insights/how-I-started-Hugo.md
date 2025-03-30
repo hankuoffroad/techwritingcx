@@ -7,74 +7,67 @@ tags:
   - Hugo
   - Web Development
   - Personal Blog
-  - Website Development
 categories:
   - Development Journey
   - Personal Projects
 draft: false
 ---
 
-## Why I Chose Hugo (Even Though I Didn't Want To)
+## Why I chose Hugo (even though I didn't want to)
 
-When I first started looking for a theme, I thought that just installing it would make a beautiful website. But it turned out to be just a skeleton site. After testing it for about five days, I realized that learning step by step, like building with Legos, is actually a good approach.
+When building my portfolio website, I needed a solution that was fast, flexible, and easy to maintain. After exploring various options, I decided to go with Hugo, a powerful static site generator written in Go. Here’s why it stood out:
 
-Problem-solving is such an important part of being a tech writer, and I'm really enjoying the process.
+- Flexible Content Management: Hugo’s file-based structure makes content management straightforward. Instead of dealing with complex databases, I can organize my content using simple Markdown files. This fits perfectly with my workflow as a technical writer and localization expert, allowing me to focus on creating content rather than managing a backend system.
 
-Connecting goals with current activities
+- Multi-Format Content Support in Hugo: One key reason I chose Hugo is its ability to generate multiple output formats. Unlike traditional static site generators that focus solely on a format, Hugo supports:
 
-- How can learning to build websites be applied to technical writing/translation processes?
+    -- Markdown (.md) - The default format for content in Hugo. It’s widely used because of its simplicity and readability.
 
-- How can I differentiate myself as a freelancer by applying automation?
+    -- reStructuredText (reST) (.rst) - An alternative markup language for content, commonly used in Python-related projects.
 
-- If I increase my collaboration with AI, what kind of role can I take on in the industry?  
+    -- AsciiDoc (.adoc or .asciidoc) - A lightweight markup language that’s often used in technical documentation.
 
-## Switching Hugo Themes: Challenges & Solutions
+    -- XML (.xml) - Although not as common for content creation, Hugo can handle XML files (such as RSS feeds or other structured data). This flexibility allows me to extend my website beyond a traditional blog—potentially generating custom feeds or integrating with other services.
 
-- Problem: Changing the Hugo theme turned out to be more challenging than expected
+- Hugo includes Hugo Pipes, which allows for asset optimization without needing external tools. I can process CSS with Dart-Sass within Hugo’s ecosystem. This simplifies my workflow and reduces the need for additional build tools.
 
-- Solution: Tried a couple of themes and selected the Paige them
+- Version control and ease of deployment: Since Hugo is a static site generator, all content and configurations are stored in a Git repository. This makes it easy to version control my site, collaborate with others, and deploy changes seamlessly using services like GitHub Pages, Cloudflare Pages, or Netlify.
 
-- Helpful Resources: Hugo and Paige theme Official documentation
+## Preparing the test environment and uploading a test page
 
-- Result: Successfully applied the Paige theme and was satisfied with the outcome
-
-## Preparing the Test Environment and Uploading a Simple Test Page
-
-- Hugo Installation Environment: Ubuntu 24.04.2 LTS
+- System Environment: Ubuntu 24.04.2 LTS
 
 - Hugo Version: extended/stable 0.145.0
 
 - Hugo theme: Paige
 
-Keeping Ubuntu 24.04 LTS (supported until 2029) while maintaining the latest Hugo via Snap is the most stable choice. Stability means operating predictably over a long period.
+- Key Development Tools: Git, Visual Studio Code, and Dart Sass (CSS Preprocessor)
 
-If you're working on Hugo-based web development and localization automation, the best approach is to stick with Ubuntu LTS and install the latest Hugo via Snap.
+Keeping Ubuntu 24.04 LTS (supported until 2029) while maintaining the latest Hugo via Snap is the most stable choice in the long run. Stability means operating predictably over a long period.
 
-Run hugo server --debug to check for deprecated warnings.
-(There might be changes to the structure of layouts, partials, and config.toml.)
+If you're working on Hugo-based web development and localization automation, the reliable approach is to stick with Ubuntu LTS and install the latest Hugo via Snap.
 
-For beginners in web development (I didn't even know what I was developing at first), the hardest part is website configuration. If the environment setup is difficult, it becomes a barrier. Installing through App Center was easy (as intuitive as the Microsoft/Apple App Store) – this helped me understand why developers are careful when choosing a distribution.
+For beginners in web development, the hardest part is website configuration. If the environment setup in the beginning is difficult, it becomes a barrier. Installing Hugo through App Center of Ubuntu was effortless (as intuitive as the Microsoft/Apple App Store) – this helped me understand why developers are careful when choosing a distribution.
 
-Development Environment: Git, Go, and Dart Sass
+I've installed The Paige theme using Hugo's module system, not a Git submodule. This method is used starting from Hugo v0.60.0 and later.
 
-hugo new site <sitename>: Site skeleton → literally, nothing is there.
+To preview a simple test page in dev environment, run the command in terminal;
 
-It's important to understand the directory structure before moving forward.
+```sh
+$ hugo new site <sitename>
+```
 
-The documentation varies greatly from theme to theme.
-
-The Paige theme is installed using Hugo's module system, not a Git submodule. This method is used starting from Hugo v0.60.0 and later.
-
-Be careful if the [params.paige] section is duplicated or declared incorrectly.
+This command creates a site skeleton, outlining its fundamental components without detailed content or styling.
 
 ## Content management
 
-Multi-format support: Regardless of content format, all content must have front matter, preferably including both title and date. Hugo selects the content renderer based on the markup identifier in front matter, falling back to the file extension.
+Regardless of content format, all content must have front matter, preferably including both title and date. Hugo selects the content renderer based on the markup identifier in front matter, falling back to the file extension.
 
 There are three ways to define menu entries: Automatically, In front matter, and In site configuration
 
-Define in front matter
+In this blog, I’ve used front matter to define key metadata for each post. For example, I specify the title, date, and taxonomy at the beginning of my markdown files using YAML. This ensures that Hugo processes and displays the content correctly. Below is an example of how I define front matter in my blog posts:
 
+```yaml
 ---
 title: "How I Started Developing My Hugo Site"
 date: 2025-03-29
@@ -84,108 +77,101 @@ tags:
   - Hugo
   - Web Development
   - Personal Blog
-  - Website Development
 categories:
   - Development Journey
   - Personal Projects
 draft: false
----
+```
 
-## How to Use grep to Navigate Your Hugo Configuration
+## Grep: A must-have tool for developers
 
-grep is one of the most essential tools for developers. At first, you might wonder, "Why do I need this?" But once you get used to it, it becomes incredibly useful for searching files or modifying specific code/configurations.
+rep is a powerful and essential command-line tool that developers use to search through files. The name grep stands for Global Regular Expression Print,which means it's a tool that helps you search for patterns or specific strings within files using regular expressions. In Hugo, several key files are crucial for building and managing site. These files are responsible for different aspects of your website, such as configuration, content management, themes, and templates. Here's an example of hugo.toml file, serving as the central configuration hub for Hugo website.
+
+If you've been modifying parameters in the [params] section of the hugo.toml file, you might want to search for specific settings like custom parameters (for example, a custom logo or social media links). 
 
 To find where a specific text is defined in hugo.toml:
 
 ```sh
-grep "New Hank Hugo Site" hugo.toml
+grep -A 5 "[params]" hugo.toml
 ```
 
-To search the entire project:
+This command searches for the [params] section in hugo.toml and shows the next 5 lines of context, which would likely include various parameters I’ve configured.
+
+Sample Output:
 
 ```sh
-grep -r "New Hank Hugo Site" .
+[params]
+  logo = "images/logo.png"
+  socialLinks = ["https://mastodon.social/yourusername", "https://github.com/yourusername"]
+  customCSS = "css/styles.css"
 ```
 
-To search within the content/ directory:
+In this example:
 
-```sh
-grep -r "Yourpost" content/
-```
+- logo specifies the path to your site's logo image
 
-To search inside the themes/paige/ directory:
+- socialLinks now contains Mastodon social media links
 
-```sh
-grep -r "New Hank Hugo Site" themes/paige/
-```
+- customCSS points to the CSS file for custom styling
 
-## Information Architecture and Design Strategy
+This would reflect the Mastodon URLs where I want to link to my profile. The grep command helps you quickly locate this configuration in the hugo.toml file and adjust it as needed.
 
-Structuring Content and Navigation
+## Information architecture
 
-- The website is divided into three main sections: Profile, Tech & Tools, and Notes, with content displayed in a tile-based layout.
+When designing the website’s structure, the focus is on clarity, usability, and scalability. The goal is to create an intuitive navigation system that allows visitors to easily access relevant content while keeping the organization flexible for future expansion.
 
-- Instead of using deep subsections, utilize tags and filters to organize content efficiently.
+- Three Core Sections: The website is divided into three main sections: Profile, Insights, and Projects.
 
-- Keep the category structure minimal until there is enough content, and expand it flexibly when needed.
+    -- Profile: Introduces who I am, my ongoing projects, and key highlights of my contributions to open-source initiatives
 
-- Avoid anti-patterns seen in websites with too many menu items and empty categories, which make navigation difficult.
+    -- Insights: Focuses on reflections rather than straightforward how-to guides, covering topics such as lessons learned from projects, event participation experiences, reviews of developer tools, automation insights, and IT certification preparation
 
+    -- Projects: Showcases my involvement in open-source projects, including key milestones, event participation plans, long-term vision, and integration with GitLab/GitHub APIs
 
-## Building a Scalable Hugo Site: Design, Git Workflow, and Clean Code Practices
+- Tag-Based Organization: When designing my website, I intentionally avoided using nested sections and a typical tile layout, which are often seen in free blog platforms. In my opinion, these approaches can make the design feel cluttered and overwhelming. While this may be a matter of personal taste, I believe it's important to have full control over how the site looks and functions—the way I want it. I prefer a more minimalist and straightforward design that gives a clear, clean structure, and allows me to present content in a way that feels organized and intentional. By avoiding overly complex layouts, I maintain the flexibility to adjust and optimize the site exactly how I envision it, without being limited by pre-defined templates.
 
-Commit Strategy
+- Minimalist Category Structure for Scalability: Categories are kept intentionally minimal at the start to avoid unnecessary complexity. As more content is added over time, the structure can be expanded naturally to accommodate growth.
 
-- Commit by feature → Each small change should be committed separately.
+## Building a scalable Hugo site using Git Workflow
 
-- Plan major changes in a modular way and complete them systematically.
+When developing a Hugo site, establishing a solid workflow is essential for scalability, maintainability, and efficiency. Whether you're working solo or as part of a team, having a clean, modular, and consistent approach to managing your codebase will save time and reduce errors in the long run. This guide outlines key strategies for Git commits, branching, and project management practices to help you build a scalable Hugo site while keeping your development process streamlined and your codebase clean.
 
-- Work locally first and only push to remote when the code is stable.
+- Modular Commit and Commit Message Guidelines: A well-organized commit strategy is crucial for maintaining a clean history of your project and enabling efficient collaboration. Here's how you can manage your commits effectively:
 
-Branching Strategy
+    -- Commit by feature: Each small change should be committed separately. This ensures that each feature or fix is self-contained and easy to track, making it simple to revert or modify specific changes in the future.
 
-- main → Stable, production-ready code
+    -- Plan major changes modularly: For larger features or refactorings, break them into smaller, manageable tasks. Complete these tasks systematically, which will make it easier to debug and test each part before moving on to the next.
 
-- dev → Development and experimental branch
+    -- Work locally first: Always develop locally and test your changes before pushing to remote repositories. Only push your code to the remote repository when you are confident it is stable. This minimizes the risk of introducing bugs.
 
-- feature/custom-header → A feature-specific branch for modifications
+    -- Write clear and concise commit messages: Each commit message should explain what was done and why it was necessary. Avoid vague messages like "fixed stuff"; instead, use precise language, such as "Fixed header alignment on mobile devices." Here are some examples of well-written commit messages:
 
-Using .gitignore for Clean Project Management
+    ```sh
+    git commit -m "feat: add custom homepage layout"
+    git commit -m "fix: resolve menu alignment issue"
+    git commit -m "refactor: restructure partials for better readability"
+    ```
 
-- Add public/, resources/, and .hugo_build.lock to .gitignore
+- Branching Strategy: A well-structured branching strategy is essential for maintaining an organized codebase, enabling efficient development and  deployment.
 
-- A well-maintained .gitignore file:
+    -- main: This branch should always contain stable, production-ready code.
 
-    -- Prevents unnecessary files from being committed
+    -- dev: This branch is dedicated to ongoing development work and experiments. You can merge features or fixes into dev before they are considered stable enough to move to main.
 
-    -- Keeps the project clean and manageable
+    -- feature/custom-header: For specific changes like adding a custom header or new functionality, create feature branches. This keeps the codebase clean and allows you to work on individual features without disrupting the main development flow.
 
-    -- Allows flexibility in deployment strategies
+- Using .gitignore for Clean Project Management: One of the simplest yet most effective ways to manage a project is through proper use of .gitignore. This file ensures that unnecessary or generated files are not committed to your repository, helping maintain a lean and efficient workflow.
 
-    -- Makes it easier to manage accidentally committed files
+Add public/, resources/, and .hugo_build.lock to .gitignore: These are typically generated files that don’t need to be tracked in version control. By ignoring these files, you avoid cluttering your repository with files that can be easily regenerated.
 
-Modular Commit Strategy & Commit Message Guidelines
+## Another reason why documentation is important
 
-- Follow a structured commit message format:
+Reflecting on the process, I’ve come to realize just how crucial documentation is in development. It’s not just about writing code but ensuring that everything is clear, understandable, and easy to maintain. This understanding has made me appreciate the importance of documenting every step in the development journey. Additionally, collaborating with the theme author has made this journey even more rewarding. The challenges have been enjoyable, and it has truly been a learning experience as we work together to improve and refine the theme. This collaboration has made the entire process not only productive but also deeply fulfilling.
 
-```sh
-git commit -m "feat: add custom homepage layout"
-git commit -m "fix: resolve menu alignment issue"
-git commit -m "refactor: restructure partials for better readability"
-```
+## Reflecting on the journey with Hugo
 
-## SCSS File Path Issues & Transpilation
+As I look back on my journey with Hugo, it's clear that building a site isn't just about the final product—it's about the entire process and the ecosystem that supports it. From designing the architecture of my site to diving deep into the code and customizing themes, each step has been a learning experience. What truly made this journey fulfilling was the support and collaboration from the wider Hugo community.
 
-If you installed Hugo via Snap, it already includes Dart Sass, so it's best to remove any separately installed dart-sass to avoid conflicts.
-Detecting SCSS Build Failures
+The open-source ecosystem around Hugo has provided a wealth of resources, from theme authors to contributors, who generously share their knowledge and expertise. Through this collaboration, I’ve been able to overcome challenges, implement new features, and continuously improve the site. The community’s contributions have made the development process not only easier but also more enjoyable.
 
-To visually detect SCSS build failures, you can add the following fallback code:
-
-```sh
-<style>
-    /* Change background to red if SCSS fails to compile */
-    body { background: red !important; }
-</style>
-```
-
-
+In the end, it's not just the technical skills I gained but the sense of belonging to a larger, thriving ecosystem that makes the journey worthwhile. The support I received has reinforced my belief in the power of community-driven development. As I continue to work with Hugo, I’m excited for what’s to come and deeply grateful for the support that has made this all possible.

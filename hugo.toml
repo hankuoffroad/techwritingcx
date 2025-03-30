@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://techwritingcx.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Portfolio Page by Hanku'
 [markup.highlight]
 noclasses = false
 style = "github"
