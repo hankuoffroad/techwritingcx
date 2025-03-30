@@ -1,6 +1,3 @@
-# Ignore the Hugo public folder (generated files)
-public/
-
 # Ignore Hugo's temporary files and cache
 resources/
 data/
