@@ -85,7 +85,7 @@ draft: false
 
 ## Grep: A must-have tool for developers
 
-rep is a powerful and essential command-line tool that developers use to search through files. The name grep stands for Global Regular Expression Print,which means it's a tool that helps you search for patterns or specific strings within files using regular expressions. In Hugo, several key files are crucial for building and managing site. These files are responsible for different aspects of your website, such as configuration, content management, themes, and templates. Here's an example of hugo.toml file, serving as the central configuration hub for Hugo website.
+Grep is a powerful and essential command-line tool that developers use to search through files. The name grep stands for Global Regular Expression Print,which means it's a tool that helps you search for patterns or specific strings within files using regular expressions. In Hugo, several key files are crucial for building and managing site. These files are responsible for different aspects of your website, such as configuration, content management, themes, and templates. Here's an example of hugo.toml file, serving as the central configuration hub for Hugo website.
 
 If you've been modifying parameters in the [params] section of the hugo.toml file, you might want to search for specific settings like custom parameters (for example, a custom logo or social media links). 
 
