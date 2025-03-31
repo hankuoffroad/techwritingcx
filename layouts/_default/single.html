@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- title을 한 번만 설정 -->
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <!-- 필요한 추가 메타 데이터나 스타일 시트 링크 추가 -->
+</head>
+<body>
+    <main>
+        <article>
+            <header>
+                <h1>{{ .Title }}</h1> <!-- 페이지 제목을 여기에만 한 번 렌더링 -->
+            </header>
+            <section>
+                {{ .Content }}
+            </section>
+        </article>
+    </main>
+</body>
+</html>
