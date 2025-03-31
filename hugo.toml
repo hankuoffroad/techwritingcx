@@ -164,7 +164,6 @@ style = """
 """
 
 [paige.author]
-
 default = true # Whether to attribute pages without explicit authors to this author
 email = "" # Used in feeds. Example: "example@example.com".
 name = "Hanku Lee" # Used in feeds. Example: "John Doe".
