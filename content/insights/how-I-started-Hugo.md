@@ -13,7 +13,11 @@ categories:
 draft: false
 ---
 
-## Why I chose Hugo (even though I didn't want to)
+## Background & Motivation
+
+I have over 20 years of experience in the tech industry, during which I have gained diverse experience in software development, team management, and technical documentation. Recently, I have been actively working as a technical writer across various domains, and now, I am expanding my skill set by engaging directly with development. As a technical writer, I've realized that to better solve problems and think like a developer, hands-on experience is essential. This project provides me with an opportunity to enhance my technical skills and broaden my understanding of development practices.
+
+## Why I chose Hugo for my portfolio website
 
 When building my portfolio website, I needed a solution that was fast, flexible, and easy to maintain. After exploring various options, I decided to go with Hugo, a powerful static site generator written in Go. Here’s why it stood out:
 
@@ -31,7 +35,7 @@ When building my portfolio website, I needed a solution that was fast, flexible,
 
 - Hugo includes Hugo Pipes, which allows for asset optimization without needing external tools. I can process CSS with Dart-Sass within Hugo’s ecosystem. This simplifies my workflow and reduces the need for additional build tools.
 
-- Version control and ease of deployment: Since Hugo is a static site generator, all content and configurations are stored in a Git repository. This makes it easy to version control my site, collaborate with others, and deploy changes seamlessly using services like GitHub Pages, Cloudflare Pages, or Netlify.
+- Version control and ease of deployment: Since Hugo is a static site generator, all content and configurations are stored in a Git repository. This makes it easy to version control my site, collaborate with others, and deploy changes seamlessly using services like GitHub Pages, Vercel, or Netlify.
 
 ## Preparing the test environment and uploading a test page
 
@@ -83,42 +87,9 @@ categories:
 draft: false
 ```
 
-## Grep: A must-have tool for developers
-
-Grep is a powerful and essential command-line tool that developers use to search through files. The name grep stands for Global Regular Expression Print,which means it's a tool that helps you search for patterns or specific strings within files using regular expressions. In Hugo, several key files are crucial for building and managing site. These files are responsible for different aspects of your website, such as configuration, content management, themes, and templates. Here's an example of hugo.toml file, serving as the central configuration hub for Hugo website.
-
-If you've been modifying parameters in the [params] section of the hugo.toml file, you might want to search for specific settings like custom parameters (for example, a custom logo or social media links). 
-
-To find where a specific text is defined in hugo.toml:
-
-```sh
-grep -A 5 "[params]" hugo.toml
-```
-
-This command searches for the [params] section in hugo.toml and shows the next 5 lines of context, which would likely include various parameters I’ve configured.
-
-Sample Output:
-
-```sh
-[params]
-  logo = "images/logo.png"
-  socialLinks = ["https://mastodon.social/yourusername", "https://github.com/yourusername"]
-  customCSS = "css/styles.css"
-```
-
-In this example:
-
-- logo specifies the path to your site's logo image
-
-- socialLinks now contains Mastodon social media links
-
-- customCSS points to the CSS file for custom styling
-
-This would reflect the Mastodon URLs where I want to link to my profile. The grep command helps you quickly locate this configuration in the hugo.toml file and adjust it as needed.
-
 ## Information architecture
 
-When designing the website’s structure, the focus is on clarity, usability, and scalability. The goal is to create an intuitive navigation system that allows visitors to easily access relevant content while keeping the organization flexible for future expansion.
+When designing the website’s structure, the focus is on clarity, usability, and scalability. The goal is an intuitive navigation system that allows visitors to easily access relevant content while keeping the organization flexible for future expansion.
 
 - Three Core Sections: The website is divided into three main sections: Profile, Insights, and Projects.
 

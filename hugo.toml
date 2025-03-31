@@ -154,6 +154,7 @@ disable_title = false
 disable_word_count = true
 
 [params.paige]
+
 style = """
 #paige-page-content > * { margin-left: auto; margin-right: auto; max-width: 40rem; }
 #paige-page-content > img,
@@ -163,6 +164,7 @@ style = """
 """
 
 [paige.author]
+
 default = true # Whether to attribute pages without explicit authors to this author
 email = "" # Used in feeds. Example: "example@example.com".
 name = "Hanku Lee" # Used in feeds. Example: "John Doe".
