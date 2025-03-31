@@ -1,6 +1,6 @@
 ---
 title: "How I Started Developing My Hugo Site"
-date: 2025-03-29
+date: 2025-04-01
 author: "Hanku"
 description: "A personal journey through building a Hugo site from scratch, with insights on customization, design, and technical challenges."
 tags:
