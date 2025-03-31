@@ -1,6 +1,8 @@
 baseURL = 'https://techwritingcx.com/'
 languageCode = 'en-us'
-title = 'Portfolio Page by Hanku'
+copyright = "Techwritingcx.com by Hanku"
+title = 'Tech Writing Portfolio'
+
 [markup.highlight]
 noclasses = false
 style = "github"
@@ -61,7 +63,7 @@ disable_toc = true
 disable_word_count = true
 
 # Presentation
-full_width = true # Whether the page body fills the page width
+full_width = false # Whether the page body fills the page width
 
 # Schema
 base_schema = {} # JSON-LD schema that all page schemas override
@@ -154,10 +156,14 @@ disable_word_count = true
 [params.paige]
 style = """
 #paige-page-content > * { margin-left: auto; margin-right: auto; max-width: 40rem; }
+#paige-page-content > img,
+#paige-page-content > .paige-shortcode-image,
+#paige-page-content > .paige-shortcode-vimeo,
+#paige-page-content > .paige-shortcode-youtube { max-width: 100%; }
 """
 
 [paige.author]
-default = false # Whether to attribute pages without explicit authors to this author
+default = true # Whether to attribute pages without explicit authors to this author
 email = "" # Used in feeds. Example: "example@example.com".
 name = "Hanku Lee" # Used in feeds. Example: "John Doe".
 url = "" # Used in Atom feeds. Example: "https://example.com".
