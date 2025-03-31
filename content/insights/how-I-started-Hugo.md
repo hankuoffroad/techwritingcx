@@ -15,7 +15,9 @@ draft: false
 
 ## Background & Motivation
 
-I have over 20 years of experience in the tech industry, during which I have gained diverse experience in product support, team management, and technical documentation. Recently, I have been actively working as a technical writer across various domains, and now, I am expanding my skill set by engaging directly with development. As a technical writer, I've realized that to solve problems better and think like a developer, hands-on experience is essential. The portfolio website I built from scratch provides me with problem-solving skills and broadens my understanding of development practices.
+In 2002, I began my career in software deployments across SCM, ERP, CRM, and Big Data projects at Samsung Electronics Europe, focusing on enhancing user experience and ensuring long-term usability. This hands-on involvement with the entire software lifecycle made me acutely aware of the critical role that documentation and localization play in the success of any project. My fascination with tech writing began when I discovered how to make documentation more developer-friendly, bridging the gap between developers and users through participation in open-source projects.
+
+As a technical writer, I've realized that hands-on experience is essential for solving problems better and thinking like a developer. The portfolio website I built from scratch provides me with problem-solving skills and broadens my understanding of development practices.
 
 ## Why I chose Hugo for my portfolio website
 
