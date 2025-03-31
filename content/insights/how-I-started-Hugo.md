@@ -15,7 +15,7 @@ draft: false
 
 ## Background & Motivation
 
-I have over 20 years of experience in the tech industry, during which I have gained diverse experience in software development, team management, and technical documentation. Recently, I have been actively working as a technical writer across various domains, and now, I am expanding my skill set by engaging directly with development. As a technical writer, I've realized that to better solve problems and think like a developer, hands-on experience is essential. This project provides me with an opportunity to enhance my technical skills and broaden my understanding of development practices.
+I have over 20 years of experience in the tech industry, during which I have gained diverse experience in product support, team management, and technical documentation. Recently, I have been actively working as a technical writer across various domains, and now, I am expanding my skill set by engaging directly with development. As a technical writer, I've realized that to solve problems better and think like a developer, hands-on experience is essential. The portfolio website I built from scratch provides me with problem-solving skills and broadens my understanding of development practices.
 
 ## Why I chose Hugo for my portfolio website
 
