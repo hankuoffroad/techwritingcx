@@ -4,15 +4,15 @@
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
     <style>
-        /* 공통 스타일 */
-        body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #333; margin: 0; padding: 20px; }
+        /* 공통 스타일 - !important를 사용해 우선순위 지정 */
+        body { font-family: 'Inter', sans-serif !important; background: #f9fafb; color: #333; margin: 0; padding: 20px; }
         main { max-width: 800px; margin: auto; }
 
         /* 기본 스타일 */
         article { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: 0.3s; }
         article:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); }
-        h1 { font-size: 2rem; font-weight: 600; color: #1e293b; }
-        section { font-size: 1.1rem; line-height: 1.6; }
+        h1 { font-size: 2rem; font-weight: 600; color: #1e293b; font-family: 'Inter', sans-serif !important; }
+        section { font-size: 1.1rem; line-height: 1.6; font-family: 'Inter', sans-serif !important; }
 
         /* 코드 블록 & 프론트 매터 스타일 개선 */
         pre, code { 
@@ -30,9 +30,9 @@
         /* 커스텀 스타일 (layout: "custom"인 경우) */
         {{ if eq .Params.layout "custom" }}
         .custom-article { border-left: 5px solid #3b82f6; padding: 25px; }
-        .custom-title { text-align: center; color: #2563eb; font-size: 2.2rem; }
-        .custom-meta { text-align: center; color: #64748b; font-size: 0.9rem; }
-        .custom-content { font-size: 1.2rem; line-height: 1.8; color: #374151; }
+        .custom-title { text-align: center; color: #2563eb; font-size: 2.2rem; font-family: 'Inter', sans-serif !important; }
+        .custom-meta { text-align: center; color: #64748b; font-size: 0.9rem; font-family: 'Inter', sans-serif !important; }
+        .custom-content { font-size: 1.2rem; line-height: 1.8; color: #374151; font-family: 'Inter', sans-serif !important; }
         .custom-footer { margin-top: 20px; padding-top: 10px; border-top: 1px solid #ddd; text-align: center; font-style: italic; }
         {{ end }}
     </style>

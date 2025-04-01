@@ -5,3 +5,5 @@ title = 'Custom Post'
 layout = "custom"
 author = "Hanku"
 +++
+
+This post Will be published shortly!

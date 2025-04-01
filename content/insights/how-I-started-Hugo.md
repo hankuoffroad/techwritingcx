@@ -13,6 +13,8 @@ categories:
 draft: false
 ---
 
+# How I Started Developing My Hugo Site
+
 ## Background & Motivation
 
 In 2002, I began my career in software deployments across SCM, ERP, CRM, and Big Data projects at Samsung Electronics Europe, focusing on enhancing user experience and ensuring long-term usability. This hands-on involvement with the entire software lifecycle made me acutely aware of the critical role that documentation and localization play in the success of any project. My fascination with tech writing began when I discovered how to make documentation more developer-friendly, bridging the gap between developers and users through participation in open-source projects.

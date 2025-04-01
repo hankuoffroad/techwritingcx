@@ -51,21 +51,21 @@
         
 
         
-            <link>http://localhost:1313/insights/</link>
+            <link>https://techwritingcx.com/insights/</link>
         
 
         
-            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="https://techwritingcx.com/insights/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="http://localhost:1313/insights/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="https://techwritingcx.com/insights/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="https://techwritingcx.com/insights/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         
@@ -104,7 +104,7 @@
                     
 
                     
-                        <description><![CDATA[<h2 id=background--motivation>Background & Motivation</h2><p>In 2002, I began my career in software deployments across SCM, ERP, CRM, and Big Data projects at Samsung Electronics Europe, focusing on enhancing user experience and ensuring long-term usability. This hands-on involvement with the entire software lifecycle made me acutely aware of the critical role that documentation and localization play in the success of any project. My fascination with tech writing began when I discovered how to make documentation more developer-friendly, bridging the gap between developers and users through participation in open-source projects.</p><p>As a technical writer, I&rsquo;ve realized that hands-on experience is essential for solving problems better and thinking like a developer. The portfolio website I built from scratch provides me with problem-solving skills and broadens my understanding of development practices.</p><h2 id=why-i-chose-hugo-for-my-portfolio-website>Why I chose Hugo for my portfolio website</h2><p>When building my portfolio website, I needed a solution that was fast, flexible, and easy to maintain. After exploring various options, I decided to go with Hugo, a powerful static site generator written in Go. Here’s why it stood out:</p><ul><li><p>Flexible Content Management: Hugo’s file-based structure makes content management straightforward. Instead of dealing with complex databases, I can organize my content using simple Markdown files. This fits perfectly with my workflow as a technical writer and localization expert, allowing me to focus on creating content rather than managing a backend system.</p></li><li><p>Multi-Format Content Support in Hugo: One key reason I chose Hugo is its ability to generate multiple output formats. Unlike traditional static site generators that focus solely on a format, Hugo supports:</p><p>&ndash; Markdown (.md) - The default format for content in Hugo. It’s widely used because of its simplicity and readability.</p><p>&ndash; reStructuredText (reST) (.rst) - An alternative markup language for content, commonly used in Python-related projects.</p><p>&ndash; AsciiDoc (.adoc or .asciidoc) - A lightweight markup language that’s often used in technical documentation.</p><p>&ndash; XML (.xml) - Although not as common for content creation, Hugo can handle XML files (such as RSS feeds or other structured data). This flexibility allows me to extend my website beyond a traditional blog—potentially generating custom feeds or integrating with other services.</p></li><li><p>Hugo includes Hugo Pipes, which allows for asset optimization without needing external tools. I can process CSS with Dart-Sass within Hugo’s ecosystem. This simplifies my workflow and reduces the need for additional build tools.</p></li><li><p>Version control and ease of deployment: Since Hugo is a static site generator, all content and configurations are stored in a Git repository. This makes it easy to version control my site, collaborate with others, and deploy changes seamlessly using services like GitHub Pages, Vercel, or Netlify.</p></li></ul><h2 id=preparing-the-test-environment-and-uploading-a-test-page>Preparing the test environment and uploading a test page</h2><ul><li><p>System Environment: Ubuntu 24.04.2 LTS</p></li><li><p>Hugo Version: extended/stable 0.145.0</p></li><li><p>Hugo theme: Paige</p></li><li><p>Key Development Tools: Git, Visual Studio Code, and Dart Sass (CSS Preprocessor)</p></li></ul><p>Keeping Ubuntu 24.04 LTS (supported until 2029) while maintaining the latest Hugo via Snap is the most stable choice in the long run. Stability means operating predictably over a long period.</p><p>If you&rsquo;re working on Hugo-based web development and localization automation, the reliable approach is to stick with Ubuntu LTS and install the latest Hugo via Snap.</p><p>For beginners in web development, the hardest part is website configuration. If the environment setup in the beginning is difficult, it becomes a barrier. Installing Hugo through App Center of Ubuntu was effortless (as intuitive as the Microsoft/Apple App Store) – this helped me understand why developers are careful when choosing a distribution.</p><p>I&rsquo;ve installed The Paige theme using Hugo&rsquo;s module system, not a Git submodule. This method is used starting from Hugo v0.60.0 and later.</p><p>To preview a simple test page in dev environment, run the command in terminal;</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>$ hugo new site &lt;sitename&gt;</span></span></code></pre></div><p>This command creates a site skeleton, outlining its fundamental components without detailed content or styling.</p><h2 id=content-management>Content management</h2><p>Regardless of content format, all content must have front matter, preferably including both title and date. Hugo selects the content renderer based on the markup identifier in front matter, falling back to the file extension.</p><p>There are three ways to define menu entries: Automatically, In front matter, and In site configuration</p><p>In this blog, I’ve used front matter to define key metadata for each post. For example, I specify the title, date, and taxonomy at the beginning of my markdown files using YAML. This ensures that Hugo processes and displays the content correctly. Below is an example of how I define front matter in my blog posts:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#24292e>---</span><span style=color:#fff>
+                        <description><![CDATA[<h1 id=how-i-started-developing-my-hugo-site>How I Started Developing My Hugo Site</h1><h2 id=background--motivation>Background & Motivation</h2><p>In 2002, I began my career in software deployments across SCM, ERP, CRM, and Big Data projects at Samsung Electronics Europe, focusing on enhancing user experience and ensuring long-term usability. This hands-on involvement with the entire software lifecycle made me acutely aware of the critical role that documentation and localization play in the success of any project. My fascination with tech writing began when I discovered how to make documentation more developer-friendly, bridging the gap between developers and users through participation in open-source projects.</p><p>As a technical writer, I&rsquo;ve realized that hands-on experience is essential for solving problems better and thinking like a developer. The portfolio website I built from scratch provides me with problem-solving skills and broadens my understanding of development practices.</p><h2 id=why-i-chose-hugo-for-my-portfolio-website>Why I chose Hugo for my portfolio website</h2><p>When building my portfolio website, I needed a solution that was fast, flexible, and easy to maintain. After exploring various options, I decided to go with Hugo, a powerful static site generator written in Go. Here’s why it stood out:</p><ul><li><p>Flexible Content Management: Hugo’s file-based structure makes content management straightforward. Instead of dealing with complex databases, I can organize my content using simple Markdown files. This fits perfectly with my workflow as a technical writer and localization expert, allowing me to focus on creating content rather than managing a backend system.</p></li><li><p>Multi-Format Content Support in Hugo: One key reason I chose Hugo is its ability to generate multiple output formats. Unlike traditional static site generators that focus solely on a format, Hugo supports:</p><p>&ndash; Markdown (.md) - The default format for content in Hugo. It’s widely used because of its simplicity and readability.</p><p>&ndash; reStructuredText (reST) (.rst) - An alternative markup language for content, commonly used in Python-related projects.</p><p>&ndash; AsciiDoc (.adoc or .asciidoc) - A lightweight markup language that’s often used in technical documentation.</p><p>&ndash; XML (.xml) - Although not as common for content creation, Hugo can handle XML files (such as RSS feeds or other structured data). This flexibility allows me to extend my website beyond a traditional blog—potentially generating custom feeds or integrating with other services.</p></li><li><p>Hugo includes Hugo Pipes, which allows for asset optimization without needing external tools. I can process CSS with Dart-Sass within Hugo’s ecosystem. This simplifies my workflow and reduces the need for additional build tools.</p></li><li><p>Version control and ease of deployment: Since Hugo is a static site generator, all content and configurations are stored in a Git repository. This makes it easy to version control my site, collaborate with others, and deploy changes seamlessly using services like GitHub Pages, Vercel, or Netlify.</p></li></ul><h2 id=preparing-the-test-environment-and-uploading-a-test-page>Preparing the test environment and uploading a test page</h2><ul><li><p>System Environment: Ubuntu 24.04.2 LTS</p></li><li><p>Hugo Version: extended/stable 0.145.0</p></li><li><p>Hugo theme: Paige</p></li><li><p>Key Development Tools: Git, Visual Studio Code, and Dart Sass (CSS Preprocessor)</p></li></ul><p>Keeping Ubuntu 24.04 LTS (supported until 2029) while maintaining the latest Hugo via Snap is the most stable choice in the long run. Stability means operating predictably over a long period.</p><p>If you&rsquo;re working on Hugo-based web development and localization automation, the reliable approach is to stick with Ubuntu LTS and install the latest Hugo via Snap.</p><p>For beginners in web development, the hardest part is website configuration. If the environment setup in the beginning is difficult, it becomes a barrier. Installing Hugo through App Center of Ubuntu was effortless (as intuitive as the Microsoft/Apple App Store) – this helped me understand why developers are careful when choosing a distribution.</p><p>I&rsquo;ve installed The Paige theme using Hugo&rsquo;s module system, not a Git submodule. This method is used starting from Hugo v0.60.0 and later.</p><p>To preview a simple test page in dev environment, run the command in terminal;</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>$ hugo new site &lt;sitename&gt;</span></span></code></pre></div><p>This command creates a site skeleton, outlining its fundamental components without detailed content or styling.</p><h2 id=content-management>Content management</h2><p>Regardless of content format, all content must have front matter, preferably including both title and date. Hugo selects the content renderer based on the markup identifier in front matter, falling back to the file extension.</p><p>There are three ways to define menu entries: Automatically, In front matter, and In site configuration</p><p>In this blog, I’ve used front matter to define key metadata for each post. For example, I specify the title, date, and taxonomy at the beginning of my markdown files using YAML. This ensures that Hugo processes and displays the content correctly. Below is an example of how I define front matter in my blog posts:</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#24292e>---</span><span style=color:#fff>
 </span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>title</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;How I Started Developing My Hugo Site&#34;</span><span style=color:#fff>
 </span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>date</span><span style=color:#1f2328>:</span><span style=color:#fff> </span>2025-03-29<span style=color:#fff>
 </span></span></span><span style=display:flex><span><span style=color:#fff></span><span style=color:#0550ae>author</span><span style=color:#1f2328>:</span><span style=color:#fff> </span><span style=color:#0a3069>&#34;Hanku&#34;</span><span style=color:#fff>
@@ -122,11 +122,11 @@
                     
 
                     
-                        <guid isPermaLink="false">tag:localhost:1313,2025-04-01:/insights/how-i-started-hugo/</guid>
+                        <guid isPermaLink="false">tag:techwritingcx.com,2025-04-01:/insights/how-i-started-hugo/</guid>
                     
 
                     
-                        <link>http://localhost:1313/insights/how-i-started-hugo/</link>
+                        <link>https://techwritingcx.com/insights/how-i-started-hugo/</link>
                     
 
                     
@@ -134,7 +134,7 @@
 
                         
 
-                        <atom:link href="http://localhost:1313/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="https://techwritingcx.com/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     
@@ -178,11 +178,11 @@
                     
 
                     
-                        <guid isPermaLink="false">tag:localhost:1313,2025-03-29:/insights/automation-intro/</guid>
+                        <guid isPermaLink="false">tag:techwritingcx.com,2025-03-29:/insights/automation-intro/</guid>
                     
 
                     
-                        <link>http://localhost:1313/insights/automation-intro/</link>
+                        <link>https://techwritingcx.com/insights/automation-intro/</link>
                     
 
                     
@@ -190,7 +190,7 @@
 
                         
 
-                        <atom:link href="http://localhost:1313/insights/automation-intro/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="https://techwritingcx.com/insights/automation-intro/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     
