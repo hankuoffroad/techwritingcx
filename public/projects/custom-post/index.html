@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Custom Post - Tech Writing Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
     <style>
-        /* 공통 스타일 */
+         
         body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #333; margin: 0; padding: 20px; }
         main { max-width: 800px; margin: auto; }
 
-        /* 기본 스타일 */
+         
         article { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: 0.3s; }
         article:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); }
         h1 { font-size: 2rem; font-weight: 600; color: #1e293b; }
         section { font-size: 1.1rem; line-height: 1.6; }
 
-        /* 코드 블록 & 프론트 매터 스타일 개선 */
+         
         pre, code { 
             font-family: 'Courier New', monospace; 
             background: #f3f4f6; 
             padding: 10px; 
             border-radius: 5px; 
             font-size: 0.95rem; 
-            white-space: pre-wrap; /* 자동 줄 바꿈 */
-            word-wrap: break-word; /* 긴 단어 자동 줄 바꿈 */
-            overflow-x: auto; /* 가로 스크롤 활성화 */
+            white-space: pre-wrap;  
+            word-wrap: break-word;  
+            overflow-x: auto;  
             display: block; 
         }
 
-        /* 커스텀 스타일 (layout: "custom"인 경우) */
-        {{ if eq .Params.layout "custom" }}
+         
+        
         .custom-article { border-left: 5px solid #3b82f6; padding: 25px; }
         .custom-title { text-align: center; color: #2563eb; font-size: 2.2rem; }
         .custom-meta { text-align: center; color: #64748b; font-size: 0.9rem; }
         .custom-content { font-size: 1.2rem; line-height: 1.8; color: #374151; }
         .custom-footer { margin-top: 20px; padding-top: 10px; border-top: 1px solid #ddd; text-align: center; font-style: italic; }
-        {{ end }}
+        
     </style>
 </head>
 <body>
     <main>
-        <article {{ if eq .Params.layout "custom" }} class="custom-article" {{ end }}>
+        <article  class="custom-article" >
             <header>
-                <!-- 포스트 제목 중복 방지: 한 번만 표시 -->
-                {{ if not .IsPage }}
-                    <h1 class="{{ if eq .Params.layout "custom" }}custom-title{{ end }}">{{ .Title }}</h1>
-                {{ end }}
-                {{ if eq .Params.layout "custom" }}
-                    <p class="custom-meta">Published on {{ .Date.Format "2006-01-02" }}</p>
-                {{ end }}
+                
+                
+                
+                    <p class="custom-meta">Published on 2025-04-01</p>
+                
             </header>
-            <section class="{{ if eq .Params.layout "custom" }}custom-content{{ end }}">
-                {{ .Content }}
+            <section class="custom-content">
+                
             </section>
-            {{ if and (eq .Params.layout "custom") .Params.author }}
+            
                 <footer class="custom-footer">
-                    <p>Written by: <strong>{{ .Params.author }}</strong></p>
+                    <p>Written by: <strong>Hanku</strong></p>
                 </footer>
-            {{ end }}
+            
         </article>
     </main>
 </body>

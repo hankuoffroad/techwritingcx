@@ -1,0 +1,139 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+
+        
+            
+        
+    
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            <copyright>Techwritingcx.com by Hanku</copyright>
+        
+
+        
+
+        
+            <language>en-us</language>
+        
+
+        
+            <lastBuildDate>Tue, 01 Apr 2025 15:27:55 KST</lastBuildDate>
+        
+
+        
+            <link>http://localhost:1313/projects/</link>
+        
+
+        
+            <atom:link href="http://localhost:1313/projects/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+        
+
+        
+            
+
+            <atom:link href="http://localhost:1313/projects/" hreflang="en-us" rel="alternate" type="text/html"/>
+        
+            
+
+            <atom:link href="http://localhost:1313/projects/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+        
+
+        
+
+        
+
+        
+            <title>Projects · Tech Writing Portfolio</title>
+        
+
+        
+
+        
+            
+                <item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+
+                    
+                        <guid isPermaLink="false">tag:localhost:1313,2025-04-01:/projects/custom-post/</guid>
+                    
+
+                    
+                        <link>http://localhost:1313/projects/custom-post/</link>
+                    
+
+                    
+                        
+
+                        
+
+                        <atom:link href="http://localhost:1313/projects/custom-post/" hreflang="en-us" rel="alternate" type="text/html"/>
+                    
+
+                    
+
+                    
+                        <pubDate>Tue, 01 Apr 2025 15:27:55 KST</pubDate>
+                    
+
+                    
+                        <title>Custom Post</title>
+                    
+                </item>
+            
+        
+    </channel>
+</rss>
