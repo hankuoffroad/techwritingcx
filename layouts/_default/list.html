@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Tech Writing Portfolio</title>
+<head>
+    <title>{{ .Site.Title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
     <style>
         body {
@@ -37,11 +37,11 @@
 </head>
 <body>
     <main>
-        <h1>Tech Writing Portfolio</h1>
+        <h1>{{ .Site.Title }}</h1>
         <ul>
-            
-            <li><a href="/insights/how-i-started-hugo/">How I Started Developing My Hugo Site</a></li>
-            
+            {{ range .Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
         </ul>
     </main>
 </body>
