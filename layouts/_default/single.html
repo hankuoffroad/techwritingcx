@@ -4,36 +4,99 @@
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
     <style>
-        /* 공통 스타일 - !important를 사용해 우선순위 지정 */
-        body { font-family: 'Inter', sans-serif !important; background: #f9fafb; color: #333; margin: 0; padding: 20px; }
-        main { max-width: 800px; margin: auto; }
-
-        /* 기본 스타일 */
-        article { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); transition: 0.3s; }
-        article:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); }
-        h1 { font-size: 2rem; font-weight: 600; color: #1e293b; font-family: 'Inter', sans-serif !important; }
-        section { font-size: 1.1rem; line-height: 1.6; font-family: 'Inter', sans-serif !important; }
-
-        /* 코드 블록 & 프론트 매터 스타일 개선 */
-        pre, code { 
-            font-family: 'Courier New', monospace; 
-            background: #f3f4f6; 
-            padding: 10px; 
-            border-radius: 5px; 
-            font-size: 0.95rem; 
-            white-space: pre-wrap; /* 자동 줄 바꿈 */
-            word-wrap: break-word; /* 긴 단어 자동 줄 바꿈 */
-            overflow-x: auto; /* 가로 스크롤 활성화 */
-            display: block; 
+        /* Global Styles */
+        body {
+            font-family: 'Inter', sans-serif !important;
+            background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
 
-        /* 커스텀 스타일 (layout: "custom"인 경우) */
+        /* Article Styles */
+        article {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        article:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Styles */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #4b5563;
+        }
+
+        /* Section Styles */
+        section {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        /* Code Block Styles */
+        pre, code {
+            font-family: 'Courier New', monospace;
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+            display: block;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Custom Layout Styles */
         {{ if eq .Params.layout "custom" }}
-        .custom-article { border-left: 5px solid #3b82f6; padding: 25px; }
-        .custom-title { text-align: center; color: #2563eb; font-size: 2.2rem; font-family: 'Inter', sans-serif !important; }
-        .custom-meta { text-align: center; color: #64748b; font-size: 0.9rem; font-family: 'Inter', sans-serif !important; }
-        .custom-content { font-size: 1.2rem; line-height: 1.8; color: #374151; font-family: 'Inter', sans-serif !important; }
-        .custom-footer { margin-top: 20px; padding-top: 10px; border-top: 1px solid #ddd; text-align: center; font-style: italic; }
+        .custom-article {
+            border-left: 6px solid #3b82f6;
+            padding: 30px;
+        }
+        .custom-title {
+            text-align: center;
+            color: #2563eb;
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        .custom-meta {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        .custom-content {
+            font-size: 1.3rem;
+            line-height: 1.9;
+            color: #374151;
+        }
+        .custom-footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-style: italic;
+            color: #6b7280;
+        }
         {{ end }}
     </style>
 </head>
@@ -41,7 +104,6 @@
     <main>
         <article {{ if eq .Params.layout "custom" }} class="custom-article" {{ end }}>
             <header>
-                <!-- 포스트 제목 중복 방지: 한 번만 표시 -->
                 {{ if not .IsPage }}
                     <h1 class="{{ if eq .Params.layout "custom" }}custom-title{{ end }}">{{ .Title }}</h1>
                 {{ end }}
