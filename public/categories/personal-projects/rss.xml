@@ -57,21 +57,21 @@
         
 
         
-            <link>https://techwritingcx.com/categories/personal-projects/</link>
+            <link>http://localhost:1313/categories/personal-projects/</link>
         
 
         
-            <atom:link href="https://techwritingcx.com/categories/personal-projects/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/categories/personal-projects/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="https://techwritingcx.com/categories/personal-projects/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="http://localhost:1313/categories/personal-projects/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="https://techwritingcx.com/categories/personal-projects/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/categories/personal-projects/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         
@@ -128,11 +128,11 @@
                     
 
                     
-                        <guid isPermaLink="false">tag:techwritingcx.com,2025-04-01:/insights/how-i-started-hugo/</guid>
+                        <guid isPermaLink="false">tag:localhost:1313,2025-04-01:/insights/how-i-started-hugo/</guid>
                     
 
                     
-                        <link>https://techwritingcx.com/insights/how-i-started-hugo/</link>
+                        <link>http://localhost:1313/insights/how-i-started-hugo/</link>
                     
 
                     
@@ -140,7 +140,7 @@
 
                         
 
-                        <atom:link href="https://techwritingcx.com/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="http://localhost:1313/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     
