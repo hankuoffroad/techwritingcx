@@ -1,4 +1,4 @@
-baseURL = 'https://techwritingcx.com/'
+baseURL = 'https://techwritingcx.vercel.app/'
 languageCode = 'en-us'
 copyright = "Techwritingcx.com by Hanku"
 title = 'Tech Writing Portfolio'
