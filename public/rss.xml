@@ -37,7 +37,7 @@
         
 
         
-            <lastBuildDate>Tue, 01 Apr 2025 15:27:55 KST</lastBuildDate>
+            <lastBuildDate>Thu, 03 Apr 2025 20:17:55 KST</lastBuildDate>
         
 
         
@@ -94,15 +94,16 @@
                     
 
                     
-                        <description><![CDATA[<p>This post Will be published shortly!</p>]]></description>
+                        <description><![CDATA[<h1 id=where-has-documentation-automation-gotten-us>Where has documentation automation gotten us?</h1><h2 id=table-of-contents>Table of Contents</h2><ul><li><a href=#background>Background</a></li><li><a href=#presentation-flow>Presentation Flow</a></li><li><a href=#conclusion--qa>Conclusion & Q&amp;A</a></li></ul><h2 id=background>Background</h2><p>This is my presentation plan for the OpenUK June Meetup. The session will focus on improving documentation workflow by leveraging automation, AI, and modern deployment tools. The event details can be found here: <a href=https://www.meetup.com/openuk/events/305734142/ rel=external>OpenUK Meetup - June 2025</a>
+.</p><h2 id=presentation-flow>Presentation Flow</h2><ul><li><p><strong>Introduction (2 min):</strong> Why automation matters in documentation.</p></li><li><p><strong>Key Topics:</strong></p><ul><li>Snippets/Shortcodes for efficient writing.</li><li>AI-powered QA with GitHub Copilot.</li><li>AST (Abstract Syntax Tree) for document transformation.</li><li>Vercel for automated deployment.</li></ul></li><li><p><strong>Efficient Writing with Snippets and Shortcodes (5 min):</strong></p><ul><li>Why use snippets and shortcodes?</li><li>Accelerates content creation.</li><li>Maintains consistency in styling and formatting.</li></ul></li><li><p><strong>Live Demo (VS Code):</strong></p><ul><li>Using front matter templates.</li><li>Implementing shortcodes for quick formatting.</li></ul></li></ul>]]></description>
                     
 
                     
-                        <guid isPermaLink="false">tag:localhost:1313,2025-04-01:/projects/custom-post/</guid>
+                        <guid isPermaLink="false">tag:localhost:1313,2025-04-03:/projects/openuk-meetup-june2025/</guid>
                     
 
                     
-                        <link>http://localhost:1313/projects/custom-post/</link>
+                        <link>http://localhost:1313/projects/openuk-meetup-june2025/</link>
                     
 
                     
@@ -110,17 +111,17 @@
 
                         
 
-                        <atom:link href="http://localhost:1313/projects/custom-post/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="http://localhost:1313/projects/openuk-meetup-june2025/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     
 
                     
-                        <pubDate>Tue, 01 Apr 2025 15:27:55 KST</pubDate>
+                        <pubDate>Thu, 03 Apr 2025 20:17:55 KST</pubDate>
                     
 
                     
-                        <title>Custom Post</title>
+                        <title>Optimizing Documentation Workflow - OpenUK June Meetup</title>
                     
                 </item>
             
