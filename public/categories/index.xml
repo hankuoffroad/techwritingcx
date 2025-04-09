@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Tech Writing Portfolio</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Tech Writing Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Techwritingcx.com by Hanku</copyright>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Development Journey</title>
+      <link>http://localhost:1313/categories/development-journey/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/development-journey/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal Projects</title>
+      <link>http://localhost:1313/categories/personal-projects/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/personal-projects/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

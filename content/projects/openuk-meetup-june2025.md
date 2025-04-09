@@ -19,12 +19,11 @@ This is my presentation plan for the OpenUK June Meetup. The session will focus 
 
 ## Presentation Flow
 
-- **Introduction (2 min):** Why automation matters in documentation.
+- **Introduction (2 min):** Why automation matters in documentation
 
 - **Key Topics:**
-    - Snippets/Shortcodes for efficient writing
-    - AI-powered QA with GitHub Copilot
-    - How Go Templates Enable Automation in Documentation Workflows
+    - Sustaining docs by updating outdated content (a common issue in open source projects)
+    - How writing — often overlooked in automation efforts — can be made more effective through better workflows, tooling, and community-driven feedback
     - Vercel for automated deployment
 
 - **Efficient Writing with Shortcodes (5 min):**

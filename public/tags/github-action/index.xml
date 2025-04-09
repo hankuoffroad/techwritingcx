@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github Action on Tech Writing Portfolio</title>
+    <link>http://localhost:1313/tags/github-action/</link>
+    <description>Recent content in Github Action on Tech Writing Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Techwritingcx.com by Hanku</copyright>
+    <lastBuildDate>Sat, 29 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/github-action/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Writers in DevOps: How Documentation Shapes CI/CD Adoption</title>
+      <link>http://localhost:1313/insights/automation-intro/</link>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/insights/automation-intro/</guid>
+      <description>The document discusses the role of technical writers in DevOps environments, focusing on creating persona-based documentation to improve user experience and lowering barriers for non-developers</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Tech Writing Portfolio</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Tech Writing Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Techwritingcx.com by Hanku</copyright>
+    <lastBuildDate>Thu, 03 Apr 2025 20:17:55 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimizing Documentation Workflow - OpenUK June Meetup</title>
+      <link>http://localhost:1313/projects/openuk-meetup-june2025/</link>
+      <pubDate>Thu, 03 Apr 2025 20:17:55 +0900</pubDate>
+      <guid>http://localhost:1313/projects/openuk-meetup-june2025/</guid>
+      <description>&lt;h1 id=&#34;where-has-documentation-automation-gotten-us&#34;&gt;Where has documentation automation gotten us?&lt;/h1&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#background&#34;&gt;Background&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#presentation-flow&#34;&gt;Presentation Flow&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#conclusion--qa&#34;&gt;Conclusion &amp;amp; Q&amp;amp;A&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;p&gt;This is my presentation plan for the OpenUK June Meetup. The session will focus on improving documentation workflow by leveraging automation, AI, and modern deployment tools. The event details can be found here: &lt;a href=&#34;https://www.meetup.com/openuk/events/305734142/&#34;&gt;OpenUK Meetup - June 2025&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;presentation-flow&#34;&gt;Presentation Flow&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction (2 min):&lt;/strong&gt; Why automation matters in documentation.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key Topics:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Snippets/Shortcodes for efficient writing&lt;/li&gt;&#xA;&lt;li&gt;AI-powered QA with GitHub Copilot&lt;/li&gt;&#xA;&lt;li&gt;How Go Templates Enable Automation in Documentation Workflows&lt;/li&gt;&#xA;&lt;li&gt;Vercel for automated deployment&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Efficient Writing with Shortcodes (5 min):&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

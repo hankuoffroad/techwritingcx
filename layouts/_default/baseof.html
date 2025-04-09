@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Page not found - Tech Writing Portfolio</title>
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
             </ul>
         </nav>
     </header>
     <main>
-        
-<h1 class="display-5 fw-bold text-center">Not Found</h1>
-
+        {{ block "main" . }}{{ end }}
     </main>
     <footer>
-        <p>&copy; 2025 </p>
+        <p>&copy; {{ now.Year }} {{ .Site.Params.author }}</p>
     </footer>
 </body>
 </html>
