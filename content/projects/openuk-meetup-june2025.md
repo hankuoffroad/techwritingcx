@@ -37,6 +37,6 @@ This is my presentation plan for the OpenUK June Meetup. The session will focus 
 
 - **Live Demo (5 min):**
     - Using front matter templates
-    - Implementing shortcodes for quick formatting and SEO Optimization
+    - What You See Locally ≠ What You Ship
 
 ## Conclusion & Q&A
