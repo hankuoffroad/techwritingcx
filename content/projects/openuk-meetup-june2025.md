@@ -1,10 +1,10 @@
-+++
+---
 date = '2025-04-03T20:17:55+09:00'
 draft = false
 title = 'Optimizing Documentation Workflow - OpenUK June Meetup'
 layout = "custom"
 author = "Hanku"
-+++
+---
 
 # Where has documentation automation gotten us?
 
