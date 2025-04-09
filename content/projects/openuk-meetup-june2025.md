@@ -19,24 +19,13 @@ This is my presentation plan for the OpenUK June Meetup. The session will focus 
 
 ## Presentation Flow
 
-- **Introduction (2 min):** Why automation matters in open source documentation
+- **Introduction** Why automation matters in open source documentation
 
-    - Open source thrives on contributions — but documentation often gets left behind
-    - Automation can bridge the gap between intent and delivery, making docs more maintainable, inclusive, and contributor-friendly
+    - A look into the challenges, overlooked areas, and best practices in documentation automation — especially in open source
 
-- **Key Topics:**
-    - Sustaining documentation by reducing outdated content
-    - Making writing more effective through contributor workflows
-    - Deploy like it matters: the power of instant feedback
-
-- **Efficient Writing with Shortcodes (5 min):**
-    - Why use shortcodes?
-    - Accelerates content creation
-    - Maintains consistency in styling and formatting
-    - SEO Optimization
-
-- **Live Demo (5 min):**
-    - Using front matter templates
-    - What You See Locally ≠ What You Ship
+- **Key Topics**
+    - The Problem with Documentation: “Docs are never done — they’re maintained.”
+    - Writing Automation: The Missing Piece
+    - GitHub Diffs vs Rendered Previews
 
 ## Conclusion & Q&A
