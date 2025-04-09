@@ -24,7 +24,7 @@ This is my presentation plan for the OpenUK June Meetup. The session will focus 
 - **Key Topics:**
     - Sustaining docs by updating outdated content (a common issue in open source projects)
     - How writing — often overlooked in automation efforts — can be made more effective through better workflows, tooling, and community-driven feedback
-    - Vercel for automated deployment
+    - Deploy like it matters — because for contributors, real-time feedback makes all the difference
 
 - **Efficient Writing with Shortcodes (5 min):**
     - Why use shortcodes?
