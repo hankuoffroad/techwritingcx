@@ -1,5 +1,5 @@
 ---
-date: 2025-04-03
+date: 2025-04-10
 draft: false
 title: 'Optimizing Documentation Workflow - OpenUK June Meetup'
 layout: "custom"
@@ -22,10 +22,16 @@ This is my presentation plan for the OpenUK June Meetup. The session will focus 
 - **Introduction** Why automation matters in open source documentation
 
     - A look into the challenges, overlooked areas, and best practices in documentation automation — especially in open source
+        - Open Source: Where Passion Meets Professionalism
+        - What One Pull Request Taught Me About Documentation Automation
+        - TL;DR: Documentation automation doesn't start with tools — it starts with culture, communication, and leadership
 
 - **Key Topics**
-    - The Problem with Documentation: “Docs are never done — they’re maintained.”
-    - Writing Automation: The Missing Piece
-    - GitHub Diffs vs Rendered Previews
+    - Everyone Talks CI/CD—But Who’s Automating Writing?
+        - Release Notes
+        - Code snippet and content reuse
+    - Real-time preview: GitLab Preview Links vs Deploy Previews (netlify and Vercel)
+    - Automation isn’t just about how it’s done, but how maintainable it is
+    - Docs automation as productivity tools
 
 ## Conclusion & Q&A
