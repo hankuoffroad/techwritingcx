@@ -37,7 +37,7 @@
         
 
         
-            <lastBuildDate>Thu, 03 Apr 2025 00:00:00 UTC</lastBuildDate>
+            <lastBuildDate>Thu, 10 Apr 2025 00:00:00 UTC</lastBuildDate>
         
 
         
@@ -95,11 +95,11 @@
 
                     
                         <description><![CDATA[<h1 id=where-has-documentation-automation-gotten-us>Where has documentation automation gotten us?</h1><h2 id=table-of-contents>Table of Contents</h2><ul><li><a href=#background>Background</a></li><li><a href=#presentation-flow>Presentation Flow</a></li><li><a href=#conclusion--qa>Conclusion & Q&amp;A</a></li></ul><h2 id=background>Background</h2><p>This is my presentation plan for the OpenUK June Meetup. The session will focus on improving documentation workflow by leveraging automation, AI, and modern deployment tools. The event details can be found here: <a href=https://www.meetup.com/openuk/events/305734142/ rel=external>OpenUK Meetup - June 2025</a>
-.</p><h2 id=presentation-flow>Presentation Flow</h2><ul><li><p><strong>Introduction</strong> Why automation matters in open source documentation</p><ul><li>A look into the challenges, overlooked areas, and best practices in documentation automation — especially in open source</li></ul></li><li><p><strong>Key Topics</strong></p><ul><li>The Problem with Documentation: “Docs are never done — they’re maintained.”</li><li>Writing Automation: The Missing Piece</li><li>GitHub Diffs vs Rendered Previews</li></ul></li></ul><h2 id=conclusion--qa>Conclusion & Q&amp;A</h2>]]></description>
+.</p><h2 id=presentation-flow>Presentation Flow</h2><ul><li><p><strong>Introduction</strong> Why automation matters in open source documentation</p><ul><li>A look into the challenges, overlooked areas, and best practices in documentation automation — especially in open source<ul><li>Open Source: Where Passion Meets Professionalism</li><li>What One Pull Request Taught Me About Documentation Automation</li><li>TL;DR: Documentation automation doesn&rsquo;t start with tools — it starts with culture, communication, and leadership</li></ul></li></ul></li><li><p><strong>Key Topics</strong></p><ul><li>Everyone Talks CI/CD—But Who’s Automating Writing?<ul><li>Release Notes</li><li>Code snippet and content reuse</li></ul></li><li>Real-time preview: GitLab Preview Links vs Deploy Previews (netlify and Vercel)</li><li>Automation isn’t just about how it’s done, but how maintainable it is</li><li>Docs automation as productivity tools</li></ul></li></ul><h2 id=conclusion--qa>Conclusion & Q&amp;A</h2>]]></description>
                     
 
                     
-                        <guid isPermaLink="false">tag:localhost:1313,2025-04-03:/projects/openuk-meetup-june2025/</guid>
+                        <guid isPermaLink="false">tag:localhost:1313,2025-04-10:/projects/openuk-meetup-june2025/</guid>
                     
 
                     
@@ -117,7 +117,7 @@
                     
 
                     
-                        <pubDate>Thu, 03 Apr 2025 00:00:00 UTC</pubDate>
+                        <pubDate>Thu, 10 Apr 2025 00:00:00 UTC</pubDate>
                     
 
                     
