@@ -1,6 +1,7 @@
 # Ignore Hugo's temporary files and cache
 resources/
 data/
+hugo_stats.json
 
 # Ignore IDE/editor files
 .vscode/
@@ -15,3 +16,25 @@ Thumbs.db
 
 # Ignore .env files (if you're using environment variables)
 .env
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+
+# Ignore build artifacts
+dist/
+
+# Ignore Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore deployment files
+.netlify/
+.vercel/
+
+# Ignore backup files
+*.bak
+*.old
+*.orig
