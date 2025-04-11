@@ -51,21 +51,21 @@
         
 
         
-            <link>https://techwritingcx.vercel.app/projects/</link>
+            <link>http://localhost:1313/projects/</link>
         
 
         
-            <atom:link href="https://techwritingcx.vercel.app/projects/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/projects/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="https://techwritingcx.vercel.app/projects/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="http://localhost:1313/projects/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="https://techwritingcx.vercel.app/projects/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/projects/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         
@@ -109,11 +109,11 @@
                     
 
                     
-                        <guid isPermaLink="false">tag:techwritingcx.vercel.app,2025-04-10:/projects/openuk-meetup-june2025/</guid>
+                        <guid isPermaLink="false">tag:localhost:1313,2025-04-10:/projects/openuk-meetup-june2025/</guid>
                     
 
                     
-                        <link>https://techwritingcx.vercel.app/projects/openuk-meetup-june2025/</link>
+                        <link>http://localhost:1313/projects/openuk-meetup-june2025/</link>
                     
 
                     
@@ -121,7 +121,7 @@
 
                         
 
-                        <atom:link href="https://techwritingcx.vercel.app/projects/openuk-meetup-june2025/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="http://localhost:1313/projects/openuk-meetup-june2025/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     

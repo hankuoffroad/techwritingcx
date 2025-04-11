@@ -57,21 +57,21 @@
         
 
         
-            <link>https://techwritingcx.vercel.app/tags/devops/</link>
+            <link>http://localhost:1313/tags/devops/</link>
         
 
         
-            <atom:link href="https://techwritingcx.vercel.app/tags/devops/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/tags/devops/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="https://techwritingcx.vercel.app/tags/devops/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="http://localhost:1313/tags/devops/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="https://techwritingcx.vercel.app/tags/devops/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/tags/devops/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         
@@ -114,11 +114,11 @@
                     
 
                     
-                        <guid isPermaLink="false">tag:techwritingcx.vercel.app,2025-03-29:/insights/automation-intro/</guid>
+                        <guid isPermaLink="false">tag:localhost:1313,2025-03-29:/insights/automation-intro/</guid>
                     
 
                     
-                        <link>https://techwritingcx.vercel.app/insights/automation-intro/</link>
+                        <link>http://localhost:1313/insights/automation-intro/</link>
                     
 
                     
@@ -126,7 +126,7 @@
 
                         
 
-                        <atom:link href="https://techwritingcx.vercel.app/insights/automation-intro/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="http://localhost:1313/insights/automation-intro/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     

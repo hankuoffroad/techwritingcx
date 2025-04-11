@@ -51,21 +51,21 @@
         
 
         
-            <link>https://techwritingcx.vercel.app/tags/</link>
+            <link>http://localhost:1313/tags/</link>
         
 
         
-            <atom:link href="https://techwritingcx.vercel.app/tags/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/tags/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="https://techwritingcx.vercel.app/tags/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="http://localhost:1313/tags/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="https://techwritingcx.vercel.app/tags/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="http://localhost:1313/tags/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         

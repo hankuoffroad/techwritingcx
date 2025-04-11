@@ -97,3 +97,36 @@ pre, code {
     font-style: italic;
     color: #6b7280;
 }
+
+/* Table Styles */
+table {
+    width: auto; /* Allow the table to shrink to fit its content */
+    border-collapse: collapse;
+    margin: 30px auto; /* Add vertical margin and center the table horizontally */
+    padding: 0 20px; /* Add padding to the left and right */
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a light shadow */
+    display: block; /* Ensure responsiveness */
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    white-space: normal; /* Allow text wrapping */
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Add a border to table cells */
+    padding: 16px; /* Increase padding for better spacing */
+}
+
+table th {
+    background-color: #f3f4f6; /* Light background for table headers */
+    font-weight: 600;
+    color: #374151;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fafb; /* Alternate row background for better readability */
+}
+
+table tr:hover {
+    background-color: #f1f5f9; /* Highlight row on hover */
+}
