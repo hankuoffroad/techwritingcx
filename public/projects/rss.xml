@@ -51,21 +51,21 @@
         
 
         
-            <link>http://localhost:1313/projects/</link>
+            <link>https://techwritingcx.vercel.app/projects/</link>
         
 
         
-            <atom:link href="http://localhost:1313/projects/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="https://techwritingcx.vercel.app/projects/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="http://localhost:1313/projects/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="https://techwritingcx.vercel.app/projects/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="http://localhost:1313/projects/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="https://techwritingcx.vercel.app/projects/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         
@@ -105,15 +105,15 @@
 
                     
                         <description><![CDATA[<h1 id=where-has-documentation-automation-gotten-us>Where has documentation automation gotten us?</h1><h2 id=table-of-contents>Table of Contents</h2><ul><li><a href=#background>Background</a></li><li><a href=#presentation-flow>Presentation Flow</a><ul><li><a href=#introduction>Introduction</a></li><li><a href=#key-topics>Key Topics</a></li></ul></li><li><a href=#conclusion--qa>Conclusion & Q&amp;A</a></li></ul><h2 id=background>Background</h2><p>This is my presentation plan for the OpenUK June Meetup. The session will focus on improving documentation workflow by leveraging automation, AI, and modern deployment tools. The event details can be found here: <a href=https://www.meetup.com/openuk/events/305734142/ rel=external>OpenUK Meetup - June 2025</a>
-.</p><h2 id=presentation-flow>Presentation Flow</h2><h3 id=introduction-why-automation-matters-in-open-source-documentation>Introduction: Why automation matters in open source documentation:</h3><ul><li>A look into the challenges, overlooked areas, and best practices in documentation automation — especially in open source:<ul><li>Open Source: Where Passion Meets Professionalism</li><li>What One Pull Request Taught Me About Documentation Automation</li><li>TL;DR: Documentation automation doesn&rsquo;t start with tools — it starts with culture, communication, and leadership</li></ul></li></ul><h3 id=key-topics>Key Topics</h3><ul><li>Everyone Talks CI/CD—But Who’s Automating Writing?<ul><li>Release Notes</li><li>Code snippet and content reuse</li></ul></li><li>Real-time preview:<ul><li>GitLab Preview Links vs Deploy Previews (Netlify and Vercel)</li></ul></li><li>Automation isn’t just about how it’s done, but how maintainable it is</li><li>Docs automation as productivity tools</li></ul><h2 id=conclusion--qa>Conclusion & Q&amp;A</h2>]]></description>
+.</p><h2 id=presentation-flow>Presentation Flow</h2><h3 id=introduction-why-automation-matters-in-open-source-documentation>Introduction: Why automation matters in open source documentation:</h3><ul><li>A look into the challenges, overlooked areas, and best practices in documentation automation — especially in open source:<ul><li>Open Source: Where Passion Meets Professionalism</li><li>What One Pull Request Taught Me About Documentation Automation</li><li>TL;DR: Documentation automation doesn&rsquo;t start with tools — it starts with culture, communication, and leadership</li></ul></li></ul><h3 id=-cross-platform-documentation-efficiency>📌 Cross-platform Documentation Efficiency</h3><table><thead><tr><th>Topic</th><th>Tool Examples</th><th>Key Takeaway</th></tr></thead><tbody><tr><td><strong>Code Reuse</strong></td><td>Hugo, Antora, MDX</td><td>Reuse code snippets or UI components within docs using shortcodes, includes, or components</td></tr><tr><td><strong>Efficient Doc Structure</strong></td><td><code>_index.md</code>, <code>nav.adoc</code></td><td>Metadata-driven navigation supports better translation and maintenance</td></tr><tr><td><strong>Reusable Snippets</strong></td><td>admonitions, include::</td><td>Reuse explanatory patterns to ensure consistency and save time</td></tr><tr><td><strong>Deployment & Preview</strong></td><td>Netlify, GitHub Actions, Vercel</td><td>Common local/deploy mismatches and how to preview changes safely</td></tr></tbody></table><h3 id=key-topics>Key Topics</h3><ul><li>Everyone Talks CI/CD—But Who’s Automating Writing?<ul><li>Release Notes</li><li>Code snippet and content reuse</li></ul></li><li>Real-time preview:<ul><li>GitLab Preview Links vs Deploy Previews (Netlify and Vercel)</li></ul></li><li>Automation isn’t just about how it’s done, but how maintainable it is</li><li>Docs automation as productivity tools</li></ul><h2 id=conclusion--qa>Conclusion & Q&amp;A</h2>]]></description>
                     
 
                     
-                        <guid isPermaLink="false">tag:localhost:1313,2025-04-10:/projects/openuk-meetup-june2025/</guid>
+                        <guid isPermaLink="false">tag:techwritingcx.vercel.app,2025-04-10:/projects/openuk-meetup-june2025/</guid>
                     
 
                     
-                        <link>http://localhost:1313/projects/openuk-meetup-june2025/</link>
+                        <link>https://techwritingcx.vercel.app/projects/openuk-meetup-june2025/</link>
                     
 
                     
@@ -121,7 +121,7 @@
 
                         
 
-                        <atom:link href="http://localhost:1313/projects/openuk-meetup-june2025/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="https://techwritingcx.vercel.app/projects/openuk-meetup-june2025/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     

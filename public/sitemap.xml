@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://techwritingcx.vercel.app/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/openuk-meetup-june2025/</loc>
+    <loc>https://techwritingcx.vercel.app/projects/openuk-meetup-june2025/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://techwritingcx.vercel.app/projects/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://techwritingcx.vercel.app/categories/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/development-journey/</loc>
+    <loc>https://techwritingcx.vercel.app/categories/development-journey/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/insights/how-i-started-hugo/</loc>
+    <loc>https://techwritingcx.vercel.app/insights/how-i-started-hugo/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://techwritingcx.vercel.app/tags/hugo/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/insights/</loc>
+    <loc>https://techwritingcx.vercel.app/insights/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/personal-blog/</loc>
+    <loc>https://techwritingcx.vercel.app/tags/personal-blog/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/personal-projects/</loc>
+    <loc>https://techwritingcx.vercel.app/categories/personal-projects/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://techwritingcx.vercel.app/tags/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web-development/</loc>
+    <loc>https://techwritingcx.vercel.app/tags/web-development/</loc>
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
+    <loc>https://techwritingcx.vercel.app/tags/automation/</loc>
     <lastmod>2025-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/devops/</loc>
+    <loc>https://techwritingcx.vercel.app/tags/devops/</loc>
     <lastmod>2025-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/github-action/</loc>
+    <loc>https://techwritingcx.vercel.app/tags/github-action/</loc>
     <lastmod>2025-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/insights/automation-intro/</loc>
+    <loc>https://techwritingcx.vercel.app/insights/automation-intro/</loc>
     <lastmod>2025-03-29T00:00:00+00:00</lastmod>
   </url>
 </urlset>

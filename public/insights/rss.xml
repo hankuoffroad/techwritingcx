@@ -51,21 +51,21 @@
         
 
         
-            <link>http://localhost:1313/insights/</link>
+            <link>https://techwritingcx.vercel.app/insights/</link>
         
 
         
-            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
+            <atom:link href="https://techwritingcx.vercel.app/insights/rss.xml" hreflang="en-us" rel="self" type="application/rss+xml"/>
         
 
         
             
 
-            <atom:link href="http://localhost:1313/insights/" hreflang="en-us" rel="alternate" type="text/html"/>
+            <atom:link href="https://techwritingcx.vercel.app/insights/" hreflang="en-us" rel="alternate" type="text/html"/>
         
             
 
-            <atom:link href="http://localhost:1313/insights/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
+            <atom:link href="https://techwritingcx.vercel.app/insights/rss.xml" hreflang="en-us" rel="alternate" type="application/rss+xml"/>
         
 
         
@@ -122,11 +122,11 @@
                     
 
                     
-                        <guid isPermaLink="false">tag:localhost:1313,2025-04-01:/insights/how-i-started-hugo/</guid>
+                        <guid isPermaLink="false">tag:techwritingcx.vercel.app,2025-04-01:/insights/how-i-started-hugo/</guid>
                     
 
                     
-                        <link>http://localhost:1313/insights/how-i-started-hugo/</link>
+                        <link>https://techwritingcx.vercel.app/insights/how-i-started-hugo/</link>
                     
 
                     
@@ -134,7 +134,7 @@
 
                         
 
-                        <atom:link href="http://localhost:1313/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="https://techwritingcx.vercel.app/insights/how-i-started-hugo/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     
@@ -178,11 +178,11 @@
                     
 
                     
-                        <guid isPermaLink="false">tag:localhost:1313,2025-03-29:/insights/automation-intro/</guid>
+                        <guid isPermaLink="false">tag:techwritingcx.vercel.app,2025-03-29:/insights/automation-intro/</guid>
                     
 
                     
-                        <link>http://localhost:1313/insights/automation-intro/</link>
+                        <link>https://techwritingcx.vercel.app/insights/automation-intro/</link>
                     
 
                     
@@ -190,7 +190,7 @@
 
                         
 
-                        <atom:link href="http://localhost:1313/insights/automation-intro/" hreflang="en-us" rel="alternate" type="text/html"/>
+                        <atom:link href="https://techwritingcx.vercel.app/insights/automation-intro/" hreflang="en-us" rel="alternate" type="text/html"/>
                     
 
                     
