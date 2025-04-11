@@ -27,6 +27,16 @@ This is my presentation plan for the OpenUK June Meetup. The session will focus 
   - What One Pull Request Taught Me About Documentation Automation
   - TL;DR: Documentation automation doesn't start with tools — it starts with culture, communication, and leadership
 
+### 📌 Cross-platform Documentation Efficiency
+
+| Topic | Tool Examples | Key Takeaway |
+|-------|----------------|--------------|
+| **Code Reuse** | Hugo, Antora, MDX | Reuse code snippets or UI components within docs using shortcodes, includes, or components |
+| **Efficient Doc Structure** | `_index.md`, `nav.adoc` | Metadata-driven navigation supports better translation and maintenance |
+| **Reusable Snippets** | admonitions, include:: | Reuse explanatory patterns to ensure consistency and save time |
+| **Deployment & Preview** | Netlify, GitHub Actions, Vercel | Common local/deploy mismatches and how to preview changes safely |
+
+
 ### Key Topics
 - Everyone Talks CI/CD—But Who’s Automating Writing?
   - Release Notes
